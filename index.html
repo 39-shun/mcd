@@ -5,295 +5,201 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>マック価格マップ｜全国ビッグマック価格帯調査</title>
 
-<!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
-
-<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-/* ============================================================
-   CSS Variables & Reset
-============================================================ */
 :root {
   --bg:        #0f0f0f;
   --surface:   #1a1a1a;
   --border:    #2a2a2a;
   --text:      #e8e8e8;
   --text-sub:  #888;
-  --accent:    #f0c040;       /* McDonald's yellow-ish, desaturated */
-
-  /* Price tier colors */
-  --pin-standard:   #4caf8a;  /* green  - standard  ¥500 */
-  --pin-semi-urban: #f0a030;  /* orange - semi_urban ¥530 */
-  --pin-urban:      #e05050;  /* red    - urban      ¥560 */
-  --pin-special:    #9060e0;  /* purple - special    ¥590+ */
-  --pin-unknown:    #666;     /* gray   - no data */
-
+  --accent:    #f0c040;
+  --pin-standard:   #4caf8a;
+  --pin-semi-urban: #f0a030;
+  --pin-urban:      #e05050;
+  --pin-special:    #9060e0;
   --sidebar-w: 260px;
   --header-h:  52px;
+  --ad-bottom-h: 60px; /* スマホ下部広告の高さ */
 }
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; overflow: hidden; }
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 14px;
-}
+body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; }
 
-/* ============================================================
-   Layout
-============================================================ */
+/* Layout */
 #app {
   display: grid;
   height: 100vh;
   grid-template-rows: var(--header-h) 1fr;
   grid-template-columns: var(--sidebar-w) 1fr;
-  grid-template-areas:
-    "header header"
-    "sidebar map";
+  grid-template-areas: "header header" "sidebar map";
 }
 
-/* ============================================================
-   Header
-============================================================ */
+/* Header */
 #header {
   grid-area: header;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: flex; align-items: center; gap: 12px;
   padding: 0 16px;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   z-index: 1000;
 }
-#header .logo {
-  font-family: 'DM Mono', monospace;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--accent);
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-}
-#header .tagline {
-  font-size: 11px;
-  color: var(--text-sub);
-  white-space: nowrap;
-}
+#header .logo { font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: .05em; white-space: nowrap; }
+#header .tagline { font-size: 11px; color: var(--text-sub); white-space: nowrap; }
 #header .spacer { flex: 1; }
-#header .legend {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 11px;
-  color: var(--text-sub);
-}
-.legend-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
+.legend { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.legend-item { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--text-sub); }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
-/* ============================================================
-   Sidebar (PC)
-============================================================ */
+/* Sidebar */
 #sidebar {
   grid-area: sidebar;
   background: var(--surface);
   border-right: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  display: flex; flex-direction: column; overflow: hidden;
 }
 #sidebar-title {
   padding: 14px 14px 10px;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text-sub);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
+  font-size: 11px; font-weight: 700; color: var(--text-sub);
+  letter-spacing: .1em; text-transform: uppercase;
+  border-bottom: 1px solid var(--border); flex-shrink: 0;
 }
-#pref-list {
-  flex: 1;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-}
+#pref-list { flex: 1; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
 .pref-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 9px 14px;
-  cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 9px 14px; cursor: pointer;
   border-bottom: 1px solid transparent;
-  transition: background 0.12s;
-  gap: 8px;
+  border-left: 2px solid transparent;
+  transition: background .12s; gap: 8px;
 }
-.pref-item:hover { background: rgba(255,255,255,0.04); }
-.pref-item.active {
-  background: rgba(240,192,64,0.08);
-  border-left: 2px solid var(--accent);
-}
+.pref-item:hover { background: rgba(255,255,255,.04); }
+.pref-item.active { background: rgba(240,192,64,.08); border-left-color: var(--accent); }
 .pref-name { font-size: 13px; flex: 1; }
 .pref-freshness {
-  font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  color: var(--text-sub);
-  white-space: nowrap;
-  padding: 2px 5px;
-  background: var(--border);
-  border-radius: 3px;
+  font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-sub);
+  white-space: nowrap; padding: 2px 5px; background: var(--border); border-radius: 3px;
 }
-.pref-freshness.fresh   { color: #4caf8a; background: rgba(76,175,138,0.1); }
-.pref-freshness.stale   { color: #f0a030; background: rgba(240,160,48,0.1); }
-.pref-freshness.old     { color: #e05050; background: rgba(224,80,80,0.1); }
+.pref-freshness.fresh   { color: #4caf8a; background: rgba(76,175,138,.1); }
+.pref-freshness.stale   { color: #f0a030; background: rgba(240,160,48,.1); }
+.pref-freshness.old     { color: #e05050; background: rgba(224,80,80,.1); }
 .pref-freshness.no-data { color: var(--text-sub); }
 
-#sidebar-footer {
-  padding: 10px 14px;
-  font-size: 10px;
-  color: var(--text-sub);
-  border-top: 1px solid var(--border);
-  line-height: 1.6;
+/* 広告枠（サイドバー中間） */
+.ad-sidebar {
+  margin: 8px 10px;
+  height: 90px;
+  background: rgba(255,255,255,.03);
+  border: 1px dashed var(--border);
+  border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 4px;
   flex-shrink: 0;
 }
+.ad-label { font-size: 9px; color: var(--text-sub); letter-spacing: .08em; text-transform: uppercase; }
 
-/* ============================================================
-   Map area
-============================================================ */
-#map-wrap {
-  grid-area: map;
-  position: relative;
-}
-#map {
-  width: 100%; height: 100%;
-  background: #141414;
+#sidebar-footer {
+  padding: 10px 14px; font-size: 10px; color: var(--text-sub);
+  border-top: 1px solid var(--border); line-height: 1.6; flex-shrink: 0;
 }
 
-/* Mobile top bar (hidden on PC) */
+/* Map */
+#map-wrap { grid-area: map; position: relative; }
+#map { width: 100%; height: 100%; background: #141414; }
+
+/* Mobile top bar */
 #mobile-bar {
   display: none;
-  position: absolute;
-  top: 10px; left: 10px; right: 10px;
-  z-index: 900;
-  gap: 6px;
+  position: absolute; top: 10px; left: 10px; right: 10px;
+  z-index: 900; gap: 6px;
 }
-#pref-select, #pref-select-mobile {
-  flex: 1;
-  appearance: none;
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 6px;
+#pref-select-mobile {
+  flex: 1; appearance: none;
+  background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: 6px;
   padding: 8px 12px;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 13px;
-  outline: none;
-  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif; font-size: 13px;
+  outline: none; cursor: pointer;
 }
-#pref-select:focus, #pref-select-mobile:focus {
-  border-color: var(--accent);
-}
+#pref-select-mobile:focus { border-color: var(--accent); }
 
-/* FAB: 現在地ボタン */
+/* FAB */
 #locate-btn {
   position: absolute;
   bottom: 32px; right: 12px;
   z-index: 900;
-  width: 48px; height: 48px;
-  border-radius: 50%;
-  border: none;
-  background: var(--accent);
-  color: #000;
-  font-size: 20px;
-  cursor: pointer;
+  width: 48px; height: 48px; border-radius: 50%;
+  border: none; background: var(--accent); color: #000;
+  font-size: 20px; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
-  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 3px 12px rgba(0,0,0,.5);
+  transition: transform .15s, box-shadow .15s;
 }
-#locate-btn:hover { transform: scale(1.08); box-shadow: 0 5px 18px rgba(0,0,0,0.6); }
-#locate-btn:active { transform: scale(0.95); }
+#locate-btn:hover { transform: scale(1.08); box-shadow: 0 5px 18px rgba(0,0,0,.6); }
+#locate-btn:active { transform: scale(.95); }
 
-/* Loading overlay */
-#loading {
+/* スマホ下部固定広告 */
+#ad-bottom {
   display: none;
-  position: absolute;
-  inset: 0;
-  background: rgba(15,15,15,0.7);
-  z-index: 1100;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 13px;
-  color: var(--text-sub);
+  position: fixed; bottom: 0; left: 0; right: 0;
+  height: var(--ad-bottom-h);
+  background: rgba(26,26,26,.97);
+  border-top: 1px solid var(--border);
+  z-index: 1000;
+  align-items: center; justify-content: center;
+  flex-direction: column; gap: 2px;
+}
+#ad-bottom .ad-label { font-size: 9px; color: var(--text-sub); letter-spacing: .08em; }
+
+/* Loading */
+#loading {
+  display: none; position: absolute; inset: 0;
+  background: rgba(15,15,15,.65); z-index: 1100;
+  align-items: center; justify-content: center; flex-direction: column; gap: 10px;
+  font-size: 13px; color: var(--text-sub);
 }
 #loading.active { display: flex; }
-.spinner {
-  width: 28px; height: 28px;
-  border: 2px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
-}
+.spinner { width: 28px; height: 28px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* Popup styles (injected via Leaflet) */
+/* Popup */
 .mac-popup { font-family: 'Noto Sans JP', sans-serif; min-width: 180px; }
 .mac-popup .p-name { font-size: 13px; font-weight: 700; margin-bottom: 6px; line-height: 1.4; }
 .mac-popup .p-price { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
-.mac-popup .p-tier {
-  display: inline-block;
-  font-size: 10px; padding: 2px 6px;
-  border-radius: 3px; margin-bottom: 6px;
-  font-weight: 700; letter-spacing: 0.05em;
-}
+.mac-popup .p-tier { display: inline-block; font-size: 10px; padding: 2px 6px; border-radius: 3px; margin-bottom: 6px; font-weight: 700; letter-spacing: .05em; }
 .mac-popup .p-meta { font-size: 11px; color: #888; line-height: 1.6; }
-.tier-standard   { background: rgba(76,175,138,0.2);  color: #4caf8a; }
-.tier-semi-urban { background: rgba(240,160,48,0.2);  color: #f0a030; }
-.tier-urban      { background: rgba(224,80,80,0.2);   color: #e05050; }
-.tier-special    { background: rgba(144,96,224,0.2);  color: #9060e0; }
-.tier-unknown    { background: rgba(100,100,100,0.2); color: #888; }
+.tier-standard   { background: rgba(76,175,138,.2);  color: #4caf8a; }
+.tier-semi-urban { background: rgba(240,160,48,.2);  color: #f0a030; }
+.tier-urban      { background: rgba(224,80,80,.2);   color: #e05050; }
+.tier-special    { background: rgba(144,96,224,.2);  color: #9060e0; }
+.tier-unknown    { background: rgba(100,100,100,.2); color: #888; }
 
-/* ============================================================
-   Responsive: スマホ
-============================================================ */
+/* Responsive */
 @media (max-width: 680px) {
   #app {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "map";
+    grid-template-areas: "header" "map";
   }
   #sidebar { display: none; }
   #mobile-bar { display: flex; }
-  #locate-btn { bottom: 20px; }
+  #ad-bottom { display: flex; }
+  #locate-btn { bottom: calc(var(--ad-bottom-h) + 14px); } /* 広告の上に浮かせる */
+  #map { height: calc(100vh - var(--header-h) - var(--ad-bottom-h)); }
 }
 </style>
 </head>
 <body>
-
 <div id="app">
 
-  <!-- Header -->
   <header id="header">
     <span class="logo">McPriceMap</span>
     <span class="tagline">全国ビッグマック価格帯マップ</span>
     <div class="spacer"></div>
-    <div class="legend" id="legend">
+    <div class="legend">
       <div class="legend-item"><div class="legend-dot" style="background:var(--pin-standard)"></div>¥500 通常</div>
       <div class="legend-item"><div class="legend-dot" style="background:var(--pin-semi-urban)"></div>¥530 準都心</div>
       <div class="legend-item"><div class="legend-dot" style="background:var(--pin-urban)"></div>¥560 都心</div>
@@ -301,10 +207,9 @@ body {
     </div>
   </header>
 
-  <!-- Sidebar -->
   <aside id="sidebar">
     <div id="sidebar-title">都道府県 / 鮮度</div>
-    <div id="pref-list"><!-- JSで生成 --></div>
+    <div id="pref-list"></div>
     <div id="sidebar-footer">
       ※ 全国約3,000店舗を約24日で巡回調査。<br>
       掲載価格は調査時点のものです。<br>
@@ -312,36 +217,30 @@ body {
     </div>
   </aside>
 
-  <!-- Map -->
   <div id="map-wrap">
-    <!-- モバイル用コンボボックス -->
     <div id="mobile-bar">
       <select id="pref-select-mobile"><option value="">── 都道府県を選択 ──</option></select>
     </div>
-
     <div id="map"></div>
-
-    <!-- 現在地FAB -->
     <button id="locate-btn" title="現在地から探す">⊕</button>
-
-    <!-- Loading -->
-    <div id="loading">
-      <div class="spinner"></div>
-      <span id="loading-text">読み込み中...</span>
-    </div>
+    <div id="loading"><div class="spinner"></div><span id="loading-text">読み込み中...</span></div>
   </div>
 
 </div>
 
-<!-- Scripts -->
+<!-- スマホ下部固定広告 -->
+<div id="ad-bottom">
+  <div class="ad-label">Advertisement</div>
+  <!-- ここにAdSenseコードを挿入 -->
+  <div style="font-size:11px;color:#555;">広告枠（320×50）</div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-
 <script>
 // ============================================================
-// 定数・設定
+// 設定
 // ============================================================
-
 const PREFECTURE_CONFIG = {
   "01":{"name":"北海道","bounds":[[41.35,139.30],[45.55,145.85]]},
   "02":{"name":"青森県","bounds":[[40.20,139.75],[41.55,141.70]]},
@@ -392,47 +291,29 @@ const PREFECTURE_CONFIG = {
   "47":{"name":"沖縄県","bounds":[[24.00,122.90],[27.10,131.35]]},
 };
 
-const TIER_COLORS = {
-  standard:   '#4caf8a',
-  semi_urban: '#f0a030',
-  urban:      '#e05050',
-  special:    '#9060e0',
-};
-
-const TIER_LABELS = {
-  standard:   '通常 ¥500',
-  semi_urban: '準都心 ¥530',
-  urban:      '都心 ¥560',
-  special:    '特殊立地 ¥590+',
-};
+const TIER_COLORS = { standard:'#4caf8a', semi_urban:'#f0a030', urban:'#e05050', special:'#9060e0' };
+const TIER_LABELS = { standard:'通常 ¥500', semi_urban:'準都心 ¥530', urban:'都心 ¥560', special:'特殊立地 ¥590+' };
 
 // ============================================================
 // 状態
 // ============================================================
-
 const state = {
   currentPref: null,
-  clusterGroup: null,
-  dataCache: {},      // { "13": [...shops] }
-  freshnessMap: {},   // { "13": "3日前" }
+  summaryGroup: null,    // all_summary.json によるクラスタ（軽量）
+  detailGroup: null,     // shops_XX.json による詳細クラスタ
+  detailCache: {},       // { "13": [...] } 詳細データキャッシュ
+  prefetchQueue: [],     // バックグラウンド先読みキュー
+  prefetching: false,
 };
 
 // ============================================================
-// 地図初期化
+// 地図
 // ============================================================
-
-const map = L.map('map', {
-  center: [36.5, 137.5],
-  zoom: 5,
-  zoomControl: true,
-});
-
+const map = L.map('map', { center:[36.5,137.5], zoom:5, zoomControl:true });
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/">CARTO</a>',
-  maxZoom: 19,
+  attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/">CARTO</a>',
+  maxZoom:19,
 }).addTo(map);
-
-// 二本指スクロール対応（スマホでページスクロールを妨げない）
 map.scrollWheelZoom.disable();
 map.on('focus', () => map.scrollWheelZoom.enable());
 map.on('blur',  () => map.scrollWheelZoom.disable());
@@ -440,47 +321,43 @@ map.on('blur',  () => map.scrollWheelZoom.disable());
 // ============================================================
 // ユーティリティ
 // ============================================================
-
 function getFreshnessLabel(isoStr) {
-  if (!isoStr) return { label: 'データなし', cls: 'no-data' };
-  const diff = (Date.now() - new Date(isoStr).getTime()) / 1000;
-  const h = diff / 3600;
+  if (!isoStr) return { label:'データなし', cls:'no-data' };
+  const h = (Date.now() - new Date(isoStr)) / 3600000;
   const d = h / 24;
-  if (h < 1)   return { label: '1時間以内', cls: 'fresh' };
-  if (h < 24)  return { label: `${Math.floor(h)}時間前`, cls: 'fresh' };
-  if (d < 3)   return { label: `${Math.floor(d)}日前`,   cls: 'fresh' };
-  if (d < 14)  return { label: `${Math.floor(d)}日前`,   cls: 'stale' };
-  return { label: `${Math.floor(d)}日前`, cls: 'old' };
+  if (h < 1)  return { label:'1時間以内', cls:'fresh' };
+  if (h < 24) return { label:`${Math.floor(h)}時間前`, cls:'fresh' };
+  if (d < 3)  return { label:`${Math.floor(d)}日前`, cls:'fresh' };
+  if (d < 14) return { label:`${Math.floor(d)}日前`, cls:'stale' };
+  return { label:`${Math.floor(d)}日前`, cls:'old' };
 }
 
-function getPrefFreshness(shops) {
-  if (!shops || !shops.length) return null;
-  // 最新の scraped_at を返す
-  return shops.reduce((latest, s) => {
-    if (!s.scraped_at) return latest;
-    return !latest || s.scraped_at > latest ? s.scraped_at : latest;
-  }, null);
+function makeSummaryIcon(tier) {
+  const color = TIER_COLORS[tier] || '#666';
+  return L.circleMarker(null, {}); // ダミー（後でlatLngを渡す）
 }
 
-function makeIcon(pref_code, tier) {
+function makeDetailIcon(tier) {
   const color = TIER_COLORS[tier] || '#666';
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" viewBox="0 0 20 28">
-    <path d="M10 0C4.5 0 0 4.5 0 10c0 7.5 10 18 10 18s10-10.5 10-18C20 4.5 15.5 0 10 0z" fill="${color}" opacity="0.92"/>
-    <circle cx="10" cy="10" r="4" fill="white" opacity="0.9"/>
+    <path d="M10 0C4.5 0 0 4.5 0 10c0 7.5 10 18 10 18s10-10.5 10-18C20 4.5 15.5 0 10 0z" fill="${color}" opacity=".92"/>
+    <circle cx="10" cy="10" r="4" fill="white" opacity=".9"/>
   </svg>`;
+  return L.divIcon({ html:svg, className:'', iconSize:[20,28], iconAnchor:[10,28], popupAnchor:[0,-28] });
+}
+
+function clusterIcon(cluster) {
+  const count = cluster.getChildCount();
   return L.divIcon({
-    html: svg,
-    className: '',
-    iconSize: [20, 28],
-    iconAnchor: [10, 28],
-    popupAnchor: [0, -28],
+    html:`<div style="background:rgba(240,192,64,.85);color:#000;font-family:'DM Mono',monospace;font-weight:500;font-size:${count>99?11:13}px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.4)">${count}</div>`,
+    className:'', iconSize:[36,36], iconAnchor:[18,18],
   });
 }
 
 function makeTierClass(tier) {
   if (!tier) return 'tier-unknown';
   if (tier.startsWith('special_')) return 'tier-special';
-  return 'tier-' + tier.replace('_', '-');
+  return 'tier-' + tier.replace('_','-');
 }
 
 function makeTierLabel(tier, price) {
@@ -489,83 +366,100 @@ function makeTierLabel(tier, price) {
   return TIER_LABELS[tier] || tier;
 }
 
-function formatDate(isoStr) {
-  if (!isoStr) return '不明';
-  const d = new Date(isoStr);
+function formatDate(iso) {
+  if (!iso) return '不明';
+  const d = new Date(iso);
   return `${d.getFullYear()}/${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
 }
 
-function showLoading(text = '読み込み中...') {
+function showLoading(text='読み込み中...') {
   document.getElementById('loading-text').textContent = text;
   document.getElementById('loading').classList.add('active');
 }
-function hideLoading() {
-  document.getElementById('loading').classList.remove('active');
-}
+function hideLoading() { document.getElementById('loading').classList.remove('active'); }
 
 // ============================================================
-// データ読み込みとマーカー描画
+// Phase 1: サマリーで全国を初期表示（軽量・クリック不可）
 // ============================================================
-
-async function loadPref(code) {
-  if (state.dataCache[code]) return state.dataCache[code];
-
-  showLoading(`${PREFECTURE_CONFIG[code].name}のデータを読み込み中...`);
+async function loadSummary() {
+  showLoading('全国データを読み込み中...');
   try {
-    const res = await fetch(`data/shops_${code}.json`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const res = await fetch('data/all_summary.json');
+    if (!res.ok) throw new Error('summary not found');
     const shops = await res.json();
-    state.dataCache[code] = shops;
+
+    state.summaryGroup = L.markerClusterGroup({
+      maxClusterRadius: 60,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      iconCreateFunction: clusterIcon,
+    });
+
+    for (const s of shops) {
+      if (!s.coords) continue;
+      const color = TIER_COLORS[s.price_tier] || '#666';
+      // 軽量な circleMarker（SVGなし）
+      const m = L.circleMarker(s.coords, {
+        radius: 5, color: '#000', weight: 1,
+        fillColor: color, fillOpacity: 0.85,
+      });
+      // クリック時: 詳細データを読み込んで切り替え
+      m.on('click', () => {
+        const code = String(s.prefecture_code).padStart(2,'0');
+        selectPref(code);
+      });
+      state.summaryGroup.addLayer(m);
+    }
+
+    map.addLayer(state.summaryGroup);
+
+    // 鮮度情報はサマリーからは取れないのでサイドバーは別途更新
     return shops;
-  } catch (e) {
-    console.warn(`shops_${code}.json の読み込み失敗:`, e);
+  } catch(e) {
+    console.warn('all_summary.json なし。個別JSONにフォールバックします。', e);
     return null;
   } finally {
     hideLoading();
   }
 }
 
-function renderMarkers(shops) {
-  if (state.clusterGroup) {
-    map.removeLayer(state.clusterGroup);
+// ============================================================
+// Phase 2: 詳細データの読み込みとマーカー切り替え
+// ============================================================
+async function fetchDetail(code) {
+  if (state.detailCache[code]) return state.detailCache[code];
+  try {
+    const res = await fetch(`data/shops_${code}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const shops = await res.json();
+    state.detailCache[code] = shops;
+    return shops;
+  } catch(e) {
+    console.warn(`shops_${code}.json 読み込み失敗`, e);
+    return null;
   }
+}
 
-  state.clusterGroup = L.markerClusterGroup({
+function renderDetailMarkers(shops, code) {
+  // 既存の詳細レイヤーを削除
+  if (state.detailGroup) map.removeLayer(state.detailGroup);
+
+  state.detailGroup = L.markerClusterGroup({
     maxClusterRadius: 50,
     spiderfyOnMaxZoom: true,
     showCoverageOnHover: false,
-    iconCreateFunction(cluster) {
-      const count = cluster.getChildCount();
-      return L.divIcon({
-        html: `<div style="
-          background: rgba(240,192,64,0.85);
-          color: #000;
-          font-family: 'DM Mono', monospace;
-          font-weight: 500;
-          font-size: ${count > 99 ? 11 : 13}px;
-          width: 36px; height: 36px;
-          border-radius: 50%;
-          display: flex; align-items: center; justify-content: center;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-        ">${count}</div>`,
-        className: '',
-        iconSize: [36, 36],
-        iconAnchor: [18, 18],
-      });
-    },
+    iconCreateFunction: clusterIcon,
   });
 
   for (const shop of shops) {
     if (!shop.coords || shop.coords.length < 2) continue;
-    const [lat, lng] = shop.coords;
     const tier = shop.price_tier || null;
-
-    const marker = L.marker([lat, lng], { icon: makeIcon(shop.prefecture_code, tier) });
+    const marker = L.marker(shop.coords, { icon: makeDetailIcon(tier) });
 
     const tierCls   = makeTierClass(tier);
     const tierLabel = makeTierLabel(tier, shop.bigmac_price);
     const priceStr  = shop.bigmac_price ? `¥${shop.bigmac_price}` : '価格データなし';
-    const freshness = getFreshnessLabel(shop.scraped_at);
+    const fresh     = getFreshnessLabel(shop.scraped_at);
 
     marker.bindPopup(`
       <div class="mac-popup">
@@ -573,54 +467,108 @@ function renderMarkers(shops) {
         <div class="p-price">${priceStr}</div>
         <span class="p-tier ${tierCls}">${tierLabel}</span>
         <div class="p-meta">
-          ${shop.address}<br>
-          <span title="データ取得日時">🕐 ${formatDate(shop.scraped_at)}（${freshness.label}）</span>
+          ${shop.address || ''}<br>
+          🕐 ${formatDate(shop.scraped_at)}（${fresh.label}）
         </div>
       </div>
-    `, { maxWidth: 260 });
+    `, { maxWidth:260 });
 
-    state.clusterGroup.addLayer(marker);
+    state.detailGroup.addLayer(marker);
   }
-
-  map.addLayer(state.clusterGroup);
+  map.addLayer(state.detailGroup);
 }
 
 // ============================================================
-// 都道府県切り替え
+// バックグラウンド先読み（ユーザーに気づかれないように隣県を先読み）
 // ============================================================
+async function prefetchNeighbors(selectedCode) {
+  // 選択県の前後2県を先読みキューに追加（隣接の近似として）
+  const codes = Object.keys(PREFECTURE_CONFIG);
+  const idx = codes.indexOf(selectedCode);
+  const targets = [
+    codes[idx - 2], codes[idx - 1],
+    codes[idx + 1], codes[idx + 2],
+  ].filter(Boolean).filter(c => !state.detailCache[c]);
 
+  state.prefetchQueue.push(...targets.filter(c => !state.prefetchQueue.includes(c)));
+
+  if (state.prefetching) return;
+  state.prefetching = true;
+
+  // アイドル時に順次先読み（1件ずつ、間隔を空けてサーバー負荷を避ける）
+  while (state.prefetchQueue.length > 0) {
+    const code = state.prefetchQueue.shift();
+    if (!state.detailCache[code]) {
+      await fetchDetail(code);
+      await new Promise(r => setTimeout(r, 800)); // 800ms間隔
+    }
+  }
+  state.prefetching = false;
+}
+
+// ============================================================
+// 都道府県選択
+// ============================================================
 async function selectPref(code) {
   if (!PREFECTURE_CONFIG[code]) return;
   state.currentPref = code;
 
-  // サイドバーのアクティブ状態更新
-  document.querySelectorAll('.pref-item').forEach(el => {
-    el.classList.toggle('active', el.dataset.code === code);
-  });
-  // モバイルセレクト同期
+  document.querySelectorAll('.pref-item').forEach(el =>
+    el.classList.toggle('active', el.dataset.code === code)
+  );
   document.getElementById('pref-select-mobile').value = code;
 
-  const shops = await loadPref(code);
+  showLoading(`${PREFECTURE_CONFIG[code].name}の詳細を読み込み中...`);
+  const shops = await fetchDetail(code);
+  hideLoading();
+
   if (!shops) return;
 
-  renderMarkers(shops);
+  renderDetailMarkers(shops, code);
+  map.fitBounds(PREFECTURE_CONFIG[code].bounds, { padding:[20,20] });
 
-  // 県のboundsにフィット
-  const bounds = PREFECTURE_CONFIG[code].bounds;
-  map.fitBounds(bounds, { padding: [20, 20] });
+  // 鮮度をサイドバーに反映
+  const latestIso = shops.reduce((l, s) => (!l || s.scraped_at > l) ? s.scraped_at : l, null);
+  updateFreshness(code, latestIso);
+
+  // バックグラウンドで隣県を先読み開始
+  prefetchNeighbors(code);
 }
 
 // ============================================================
-// サイドバー & セレクト生成
+// サイドバー・セレクト生成
 // ============================================================
+function updateFreshness(code, isoStr) {
+  const { label, cls } = getFreshnessLabel(isoStr);
+  const el = document.getElementById(`fresh-${code}`);
+  if (el) { el.textContent = label; el.className = `pref-freshness ${cls}`; }
+  const opt = document.getElementById(`opt-${code}`);
+  if (opt) opt.textContent = `${PREFECTURE_CONFIG[code].name}  [${label}]`;
+}
 
-async function buildSidebar() {
+function buildSidebar() {
   const list = document.getElementById('pref-list');
   const mobileSelect = document.getElementById('pref-select-mobile');
+  const codes = Object.keys(PREFECTURE_CONFIG);
 
-  // まず全件optionを追加（鮮度は非同期で後から更新）
-  for (const [code, cfg] of Object.entries(PREFECTURE_CONFIG)) {
-    // サイドバー行
+  // 広告を挿入する位置（全47件の中間あたり）
+  const adPosition = Math.floor(codes.length / 2);
+
+  codes.forEach((code, i) => {
+    const cfg = PREFECTURE_CONFIG[code];
+
+    // サイドバー中間に広告枠を挟む
+    if (i === adPosition) {
+      const adEl = document.createElement('div');
+      adEl.className = 'ad-sidebar';
+      adEl.innerHTML = `
+        <div class="ad-label">Advertisement</div>
+        <!-- ここにAdSenseコードを挿入 -->
+        <div style="font-size:11px;color:#555;">広告枠（234×60）</div>
+      `;
+      list.appendChild(adEl);
+    }
+
     const item = document.createElement('div');
     item.className = 'pref-item';
     item.dataset.code = code;
@@ -631,89 +579,65 @@ async function buildSidebar() {
     item.addEventListener('click', () => selectPref(code));
     list.appendChild(item);
 
-    // モバイルselect option
     const opt = document.createElement('option');
     opt.value = code;
-    opt.textContent = `${cfg.name}`;
     opt.id = `opt-${code}`;
+    opt.textContent = cfg.name;
     mobileSelect.appendChild(opt);
-  }
+  });
 
-  // 鮮度を非同期で読み込んで更新（サイドバーUIをブロックしない）
-  for (const code of Object.keys(PREFECTURE_CONFIG)) {
-    loadPref(code).then(shops => {
-      if (!shops) return;
-      const iso = getPrefFreshness(shops);
-      const { label, cls } = getFreshnessLabel(iso);
-      const el = document.getElementById(`fresh-${code}`);
-      if (el) {
-        el.textContent = label;
-        el.className = `pref-freshness ${cls}`;
-      }
-      // モバイルoptionにも鮮度を追記
-      const opt = document.getElementById(`opt-${code}`);
-      if (opt) {
-        opt.textContent = `${PREFECTURE_CONFIG[code].name}  [${label}]`;
-      }
-    });
-  }
+  // 詳細データが先読みされたら鮮度を更新
+  // （サマリーには scraped_at がないため、詳細読み込み時に随時反映）
 }
+
+// ============================================================
+// ズームイベント：一定以上ズームしたら現在表示エリアの詳細を先読み
+// ============================================================
+map.on('zoomend', () => {
+  if (map.getZoom() < 9) return; // 県レベル以上のズームでのみ動作
+  const center = map.getCenter();
+  const code = detectPrefFromCoords(center.lat, center.lng);
+  if (code && !state.detailCache[code]) {
+    fetchDetail(code); // バックグラウンドで静かに先読み
+  }
+});
 
 // ============================================================
 // 現在地ボタン
 // ============================================================
-
 document.getElementById('locate-btn').addEventListener('click', () => {
-  if (!navigator.geolocation) {
-    alert('お使いのブラウザは位置情報に対応していません。');
-    return;
-  }
+  if (!navigator.geolocation) { alert('位置情報に対応していません。'); return; }
   showLoading('現在地を取得中...');
   navigator.geolocation.getCurrentPosition(
     async pos => {
-      const { latitude: lat, longitude: lng } = pos.coords;
-
-      // 現在地マーカー
-      L.circleMarker([lat, lng], {
-        radius: 8, color: '#fff', fillColor: '#f0c040',
-        fillOpacity: 1, weight: 2,
+      const { latitude:lat, longitude:lng } = pos.coords;
+      L.circleMarker([lat,lng], {
+        radius:8, color:'#fff', fillColor:'#f0c040', fillOpacity:1, weight:2,
       }).addTo(map).bindPopup('📍 現在地').openPopup();
-
-      map.setView([lat, lng], 13);
+      map.setView([lat,lng], 13);
       hideLoading();
-
-      // 現在地の都道府県を自動判定してデータ読み込み
       const code = detectPrefFromCoords(lat, lng);
       if (code) {
-        const shops = await loadPref(code);
-        if (shops) renderMarkers(shops);
+        const shops = await fetchDetail(code);
+        if (shops) { renderDetailMarkers(shops, code); updateFreshness(code, shops.reduce((l,s)=>(!l||s.scraped_at>l)?s.scraped_at:l,null)); }
       }
     },
     err => {
       hideLoading();
-      const msgs = {
-        1: '位置情報の利用が許可されていません。',
-        2: '位置情報を取得できませんでした。',
-        3: '位置情報の取得がタイムアウトしました。',
-      };
+      const msgs = {1:'位置情報の利用が許可されていません。',2:'位置情報を取得できませんでした。',3:'タイムアウトしました。'};
       alert(msgs[err.code] || '位置情報の取得に失敗しました。');
     },
-    { timeout: 10000, maximumAge: 60000 }
+    { timeout:10000, maximumAge:60000 }
   );
 });
 
-// 座標から都道府県コードを判定（boundsによる簡易判定）
 function detectPrefFromCoords(lat, lng) {
   for (const [code, cfg] of Object.entries(PREFECTURE_CONFIG)) {
-    const [[s, w], [n, e]] = cfg.bounds;
-    if (lat >= s && lat <= n && lng >= w && lng <= e) return code;
+    const [[s,w],[n,e]] = cfg.bounds;
+    if (lat>=s && lat<=n && lng>=w && lng<=e) return code;
   }
   return null;
 }
-
-// ============================================================
-// モバイルセレクト
-// ============================================================
 
 document.getElementById('pref-select-mobile').addEventListener('change', e => {
   if (e.target.value) selectPref(e.target.value);
@@ -722,8 +646,8 @@ document.getElementById('pref-select-mobile').addEventListener('change', e => {
 // ============================================================
 // 起動
 // ============================================================
-
 buildSidebar();
+loadSummary();
 </script>
 </body>
 </html>
