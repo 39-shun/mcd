@@ -501,7 +501,7 @@ function renderDetailMarkers(shops) {
 // バックグラウンド先読み
 // ============================================================
 async function prefetchNeighbors(code) {
-  const codes = Object.keys(PREFECTURE_CONFIG);
+  const codes = Object.keys(PREFECTURE_CONFIG).sort();
   const idx = codes.indexOf(code);
   const targets = [codes[idx-2],codes[idx-1],codes[idx+1],codes[idx+2]]
     .filter(Boolean).filter(c => !state.detailCache[c] && !state.prefetchQueue.includes(c));
@@ -560,7 +560,7 @@ async function selectPref(code) {
 function buildSidebar() {
   const list = document.getElementById('pref-list');
   const sel  = document.getElementById('pref-select-mobile');
-  const codes = Object.keys(PREFECTURE_CONFIG);
+  const codes = Object.keys(PREFECTURE_CONFIG).sort(); // "01"〜"47" の文字列ソートで固定
   const adAt  = Math.floor(codes.length / 2); // 中間に広告
 
   codes.forEach((code, i) => {
