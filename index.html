@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>マック価格マップ｜全国ビッグマック価格帯調査</title>
+<title>マクドナルド価格マップ｜全国ビッグマック価格帯マップ</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -199,8 +199,8 @@ body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: va
 <div id="app">
 
   <header id="header">
-    <span class="logo">McPriceMap</span>
-    <span class="tagline">全国ビッグマック価格帯マップ</span>
+    <span class="logo">マクドナルド価格マップ</span>
+    <span class="tagline">全国マクドナルド ビッグマック価格帯マップ</span>
     <div class="spacer"></div>
     <!-- テーマ切り替え -->
     <select id="theme-select" title="地図テーマ">
@@ -480,6 +480,7 @@ function renderDetailMarkers(shops) {
       <div class="mac-popup">
         <div class="p-name">${shop.name}</div>
         <div class="p-price">${priceStr}</div>
+        <div style="font-size:10px;color:#999;margin-top:-4px;margin-bottom:4px;">ビッグマック単品</div>
         <span class="p-tier ${tierCls}">${makeTierLabel(tier, shop.bigmac_price)}</span>
         <div class="p-meta">
           ${shop.address || ''}<br>
