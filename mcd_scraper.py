@@ -22,8 +22,10 @@ cron設定例（ラズパイ）:
 import argparse
 import json
 import logging
+import os
 import random
 import time
+import traceback
 from datetime import datetime
 from pathlib import Path
 
@@ -48,6 +50,84 @@ FAILED_FILE = BASE_DIR / "failed_stores.json"
 
 DATA_DIR.mkdir(exist_ok=True)
 LOG_DIR.mkdir(exist_ok=True)
+
+# ============================================================
+# Discord Webhook 通知
+# .env ファイルから読み込む（gitには含めない）
+# .env の書き方:
+#   DISCORD_DIFF=https://discord.com/api/webhooks/xxx/yyy
+#   DISCORD_ERROR=https://discord.com/api/webhooks/xxx/zzz
+#   DISCORD_LOG=https://discord.com/api/webhooks/xxx/www
+# ============================================================
+
+def _load_env():
+    """`.env` を手動パース（python-dotenv不要）"""
+    env_path = BASE_DIR / ".env"
+    if not env_path.exists():
+        return
+    for line in env_path.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, val = line.partition("=")
+        os.environ.setdefault(key.strip(), val.strip())
+
+_load_env()
+
+WEBHOOK_DIFF  = os.environ.get("DISCORD_DIFF", "")   # #差分・速報
+WEBHOOK_ERROR = os.environ.get("DISCORD_ERROR", "")  # #エラー・警告
+WEBHOOK_LOG   = os.environ.get("DISCORD_LOG", "")    # #定期実行ログ
+
+
+def _discord_post(webhook_url: str, content: str):
+    """Discord Webhookにメッセージを送る。失敗してもスクレイパーを止めない。"""
+    if not webhook_url:
+        return
+    try:
+        # Discordの1メッセージ上限は2000文字
+        content = content[:1990] + "…" if len(content) > 1990 else content
+        requests.post(webhook_url, json={"content": content}, timeout=10)
+    except Exception:
+        log.warning("Discord通知の送信に失敗しました（処理は継続します）")
+
+
+def notify_diff(diffs: list):
+    """差分をDiscordの #差分・速報 に投稿"""
+    if not diffs or not WEBHOOK_DIFF:
+        return
+    lines = ["📢 **差分検知レポート**"]
+    for d in diffs[:20]:  # 多すぎる場合は先頭20件
+        if d["type"] == "new_open":
+            lines.append(f"🆕 新店: **{d['name']}** （{d.get('address','')}）")
+        elif d["type"] == "closed":
+            lines.append(f"🚫 閉店: **{d['name']}** （{d.get('address','')}）")
+        elif d["type"] == "price_change":
+            lines.append(f"💰 価格変動: **{d['name']}** {d['old_tier']} → {d['new_tier']} （¥{d['old_price']}→¥{d['new_price']}）")
+        elif d["type"] == "facility_change":
+            label = {"drive_thru":"ドライブスルー","mccafe":"マックカフェ","mobile_order":"モバイルオーダー"}.get(d["item"], d["item"])
+            state_str = "追加✅" if d["new"] else "廃止❌"
+            lines.append(f"🏪 設備変更: **{d['name']}** {label}{state_str}")
+    if len(diffs) > 20:
+        lines.append(f"…他 {len(diffs)-20} 件")
+    _discord_post(WEBHOOK_DIFF, "\n".join(lines))
+
+
+def notify_error(context: str, exc: Exception = None):
+    """エラーをDiscordの #エラー・警告 に投稿"""
+    if not WEBHOOK_ERROR:
+        return
+    lines = [f"🚨 **エラー発生** — {context}"]
+    if exc:
+        lines.append(f"```{traceback.format_exc()[-1200:]}```")
+    _discord_post(WEBHOOK_ERROR, "\n".join(lines))
+
+
+def notify_log(message: str):
+    """定期ログをDiscordの #定期実行ログ に投稿"""
+    if not WEBHOOK_LOG:
+        return
+    _discord_post(WEBHOOK_LOG, message)
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -392,6 +472,7 @@ def scrape_prefecture(pref_code: str, failed: dict) -> bool:
     poi_list = fetch_poi(config["bounds"])
     if not poi_list:
         log.error(f"{name}: POI取得失敗")
+        notify_error(f"{name}（{pref_code}）のPOI取得失敗")
         return False
     log.info(f"{name}: {len(poi_list)}店舗検出")
 
@@ -467,8 +548,11 @@ def main():
     if args.mode == "retry":
         log.info("===== モード: リトライのみ =====")
         retry_failed_stores(failed)
-        generate_diff()
+        diffs = generate_diff()
         generate_summary()
+        if diffs:
+            notify_diff(diffs)
+        notify_log(f"🔄 **リトライ完了** {datetime.now().strftime('%Y-%m-%d %H:%M')} 差分: {len(diffs) if diffs else 0}件")
         log.info("リトライ完了。")
         return
 
@@ -493,8 +577,20 @@ def main():
 
     # フルモードの末尾でもリトライを実行
     retry_failed_stores(failed)
-    generate_diff()
+    diffs = generate_diff()
     generate_summary()
+
+    # Discord: 差分通知
+    if diffs:
+        notify_diff(diffs)
+
+    # Discord: 定期ログ
+    completed_names = [PREFECTURE_CONFIG[c]["name"] for c in state.get("completed", [])[-BATCH_COUNT:]]
+    notify_log(
+        f"✅ **本日の処理完了** {datetime.now().strftime('%Y-%m-%d %H:%M')}\n"
+        f"処理県: {', '.join(completed_names)}\n"
+        f"差分件数: {len(diffs) if diffs else 0}件"
+    )
     log.info("本日分完了。")
 
 
@@ -589,7 +685,6 @@ def generate_diff():
 
     if diffs:
         out_path = DATA_DIR / f"diff_{today_str}.json"
-        # 既存の差分ファイルがあれば追記
         existing = []
         if out_path.exists():
             existing = json.loads(out_path.read_text())
@@ -598,6 +693,7 @@ def generate_diff():
         log.info(f"差分検知: {len(diffs)}件 → {out_path}")
     else:
         log.info("差分検知: 変更なし")
+    return diffs
 
 
 def generate_summary():
