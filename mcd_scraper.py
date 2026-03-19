@@ -467,6 +467,7 @@ def main():
     if args.mode == "retry":
         log.info("===== モード: リトライのみ =====")
         retry_failed_stores(failed)
+        generate_diff()
         generate_summary()
         log.info("リトライ完了。")
         return
@@ -492,6 +493,7 @@ def main():
 
     # フルモードの末尾でもリトライを実行
     retry_failed_stores(failed)
+    generate_diff()
     generate_summary()
     log.info("本日分完了。")
 
@@ -503,6 +505,100 @@ if __name__ == "__main__":
 # ============================================================
 # サマリーJSON生成（フロントエンド初期表示用）
 # ============================================================
+
+def generate_diff():
+    """
+    前回の shops_XX.json と今回を比較して差分をログ出力・JSON保存する。
+    検知項目: 新店オープン / 閉店 / 価格帯変動 / 設備変更
+    出力: data/diff_YYYYMMDD.json
+    """
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    diffs = []
+
+    for code in sorted(PREFECTURE_CONFIG.keys()):
+        new_path = DATA_DIR / f"shops_{code}.json"
+        old_path = DATA_DIR / f"shops_{code}_prev.json"
+
+        if not new_path.exists():
+            continue
+        if not old_path.exists():
+            # 初回実行時はprevを作るだけ
+            import shutil
+            shutil.copy(new_path, old_path)
+            continue
+
+        new_shops = {s["id"]: s for s in json.loads(new_path.read_text())}
+        old_shops = {s["id"]: s for s in json.loads(old_path.read_text())}
+
+        for sid, shop in new_shops.items():
+            if sid not in old_shops:
+                diffs.append({
+                    "type": "new_open",
+                    "date": today_str,
+                    "name": shop["name"],
+                    "address": shop.get("address", ""),
+                    "prefecture_code": shop.get("prefecture_code"),
+                })
+                log.info(f"[DIFF] 新店: {shop['name']}")
+            else:
+                old = old_shops[sid]
+                if shop.get("price_tier") != old.get("price_tier"):
+                    diffs.append({
+                        "type": "price_change",
+                        "date": today_str,
+                        "name": shop["name"],
+                        "address": shop.get("address", ""),
+                        "prefecture_code": shop.get("prefecture_code"),
+                        "old_tier": old.get("price_tier"),
+                        "new_tier": shop.get("price_tier"),
+                        "old_price": old.get("bigmac_price"),
+                        "new_price": shop.get("bigmac_price"),
+                    })
+                    log.info(f"[DIFF] 価格変動: {shop['name']} {old.get('price_tier')} → {shop.get('price_tier')}")
+                # 設備変更（drive_thru / mccafe / mobile_order のみ主要3項目を監視）
+                for key in ("drive_thru", "mccafe", "mobile_order"):
+                    old_val = old.get("options", {}).get(key)
+                    new_val = shop.get("options", {}).get(key)
+                    if old_val != new_val and old_val is not None:
+                        diffs.append({
+                            "type": "facility_change",
+                            "date": today_str,
+                            "name": shop["name"],
+                            "address": shop.get("address", ""),
+                            "prefecture_code": shop.get("prefecture_code"),
+                            "item": key,
+                            "old": old_val,
+                            "new": new_val,
+                        })
+                        log.info(f"[DIFF] 設備変更: {shop['name']} {key} {old_val}→{new_val}")
+
+        for sid, shop in old_shops.items():
+            if sid not in new_shops:
+                diffs.append({
+                    "type": "closed",
+                    "date": today_str,
+                    "name": shop["name"],
+                    "address": shop.get("address", ""),
+                    "prefecture_code": shop.get("prefecture_code"),
+                })
+                log.info(f"[DIFF] 閉店: {shop['name']}")
+
+        # 今回のデータをprevとして保存（次回比較用）
+        import shutil
+        shutil.copy(new_path, old_path)
+
+    if diffs:
+        out_path = DATA_DIR / f"diff_{today_str}.json"
+        # 既存の差分ファイルがあれば追記
+        existing = []
+        if out_path.exists():
+            existing = json.loads(out_path.read_text())
+        existing.extend(diffs)
+        out_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2))
+        log.info(f"差分検知: {len(diffs)}件 → {out_path}")
+    else:
+        log.info("差分検知: 変更なし")
+
 
 def generate_summary():
     """
@@ -528,6 +624,7 @@ def generate_summary():
                 "coords":          s["coords"],
                 "prefecture_code": s.get("prefecture_code"),
                 "price_tier":      s.get("price_tier"),
+                "options":         s.get("options", {}),
             })
 
     out_path = DATA_DIR / "all_summary.json"
