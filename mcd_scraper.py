@@ -155,7 +155,7 @@ HEADERS = {
 POI_URL       = "https://map.mcdonalds.co.jp/api/poi"
 STORE_URL     = "https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{store_key}.json"
 MENU_URL      = "https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{store_key}/menu.json"
-BIG_MAC_CODE  = "1215"
+BIG_MAC_CODE  = "1210"
 GROUP_CACHE_FILE = BASE_DIR / "store_groups.json"
 MAX_RETRY_COUNT = 3  # メニュー取得リトライ回数
 MAX_RETRY_COUNT = 3  # メニュー取得リトライ回数
@@ -385,7 +385,7 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
 
 def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | None]:
     """
-    CDNメニューAPIからビッグマック（1215）のEATIN価格を取得する。
+    CDNメニューAPIからビッグマック（1210）のEATIN価格を取得する。
     戻り値: (price, failure_reason)
     """
     url = MENU_URL.format(group=group, store_key=store_key)
