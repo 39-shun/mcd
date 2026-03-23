@@ -70,7 +70,7 @@ def _load_env():
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, _, val = line.partition("=")
-        os.environ.setdefault(key.strip(), val.strip().strip("'""))
+        os.environ.setdefault(key.strip(), val.strip().strip('\'"'))
 
 _load_env()
 
@@ -333,7 +333,7 @@ def fetch_bigmac_price_with_reason(store_key: str) -> tuple[int | None, str | No
                 return None, FailureReason.NOT_SUPPORTED
 
             else:
-                log.warning(f"    HTTP {resp.status_code} (試行 {attempt}/{MAX_RETRY_COUNT})")
+                log.warning(f"    HTTP {resp.status_code} (試行 {attempt}/{MAX_RETRY_COUNT}) 内容: {resp.text[:100]}")
 
         except requests.Timeout:
             log.warning(f"    タイムアウト (試行 {attempt}/{MAX_RETRY_COUNT})")
@@ -354,6 +354,8 @@ def fetch_poi(bounds: str) -> list[dict]:
             resp = requests.get(POI_URL, headers=HEADERS, params={"bounds": bounds}, timeout=15)
             if resp.status_code == 200:
                 return resp.json()
+            else:
+                log.warning(f"POI取得エラー [HTTP {resp.status_code}]: {resp.text[:200]}")
         except requests.RequestException as e:
             log.warning(f"POI取得失敗 (試行 {attempt}/3): {e}")
         time.sleep(random.uniform(10, 20))
