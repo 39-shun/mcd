@@ -385,7 +385,7 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
 
 def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | None]:
     """
-    CDNメニューAPIからビッグマック（1210）の価格を取得する。
+    CDNメニューAPIからビッグマックの価格を取得する。
     戻り値: (price, failure_reason)
     """
     url = MENU_URL.format(group=group, store_key=store_key)
@@ -398,42 +398,40 @@ def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | No
                 try:
                     data = resp.json()
                     
-                    # 再帰上限を回避するためのスタック全探索
+                    # IDへの依存を捨て、商品名「ビッグマック」で全探索する
                     stack = [data]
                     while stack:
                         curr = stack.pop()
                         if isinstance(curr, dict):
-                            # パターン1: "1210" がキー自体になっている場合
-                            if "1210" in curr and isinstance(curr["1210"], dict):
-                                val = curr["1210"]
-                                if "price" in val:
-                                    return int(val["price"]), None
-                                if "priceList" in val:
-                                    for p in val["priceList"]:
-                                        if p.get("priceCode") == "EATIN":
-                                            return int(p.get("price")), None
-
-                            # パターン2: productCodeやidの値として 1210 を持っている場合
-                            is_target = False
-                            for k in ["productCode", "id", "itemCode", "code"]:
-                                if str(curr.get(k)) == "1210":
-                                    is_target = True
+                            # キー名に "name" や "title" を含む値を取得
+                            name_vals = [str(v) for k, v in curr.items() if "name" in k.lower() or "title" in k.lower()]
+                            
+                            is_bigmac = False
+                            for v in name_vals:
+                                val_str = v.strip()
+                                # 登録商標マーク(®)等のブレを吸収しつつ、セットや倍マックを除外
+                                if "ビッグマック" in val_str and "セット" not in val_str and "倍" not in val_str:
+                                    is_bigmac = True
                                     break
-                                    
-                            if is_target:
+                            
+                            if is_bigmac:
                                 if "price" in curr:
                                     return int(curr["price"]), None
                                 if "priceList" in curr:
                                     for p in curr["priceList"]:
                                         if p.get("priceCode") == "EATIN":
                                             return int(p.get("price")), None
-                            
+
                             stack.extend(v for v in curr.values() if isinstance(v, (dict, list)))
                         elif isinstance(curr, list):
                             stack.extend(item for item in curr if isinstance(item, (dict, list)))
 
-                    # 探索して見つからなかった場合
-                    log.warning(f"    ビッグマック(1210)が見つかりません: {store_key}")
+                    # 探索して見つからなかった場合、原因究明のために生のJSONを保存する
+                    debug_file = DATA_DIR / f"debug_{store_key}.json"
+                    if not debug_file.exists():
+                        debug_file.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+                    
+                    log.warning(f"    ビッグマックが見つかりません: {store_key} (生データを {debug_file.name} に保存しました)")
                     return None, "no_bigmac"
 
                 except Exception as e:
