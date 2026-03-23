@@ -152,9 +152,11 @@ HEADERS = {
     "Accept": "application/json",
 }
 
-POI_URL    = "https://map.mcdonalds.co.jp/api/poi"
-MENU_URL   = "https://data.cat.group-f.prod.mop.mcd.qorcommerce.com/{store_key}/menu.json"
+POI_URL       = "https://map.mcdonalds.co.jp/api/poi"
+STORE_URL     = "https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{store_key}.json"
+MENU_URL      = "https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{store_key}/menu.json"
 BIG_MAC_CODE  = "1215"
+GROUP_CACHE_FILE = BASE_DIR / "store_groups.json"
 MAX_RETRY_COUNT = 3  # メニュー取得リトライ回数
 MAX_RETRY_COUNT = 3  # メニュー取得リトライ回数
 
@@ -268,6 +270,17 @@ def save_state(state: dict):
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2))
 
 
+def load_group_cache() -> dict:
+    """store_groups.jsonを読み込む。"""
+    if not GROUP_CACHE_FILE.exists():
+        log.warning("store_groups.json が見つかりません。build_group_cache.py を先に実行してください。")
+        return {}
+    data = json.loads(GROUP_CACHE_FILE.read_text())
+    found = sum(1 for v in data.values() if v)
+    log.info(f"グループキャッシュ: {found}/{len(data)}件")
+    return data
+
+
 def get_next_prefectures(state: dict) -> list[str]:
     """
     未完了の都道府県から次のBATCH_COUNT件を返す。
@@ -319,12 +332,63 @@ def determine_price_tier(price: int | None) -> str | None:
     return tier
 
 
-def fetch_bigmac_price(store_key: str) -> tuple[int | None, str | None]:
+def fetch_store_detail(store_key: str, group: str) -> dict | None:
+    """
+    store.jsonから営業時間・priceTier・座標を取得する。
+    戻り値: {"hours": {...}, "price_tier_raw": "1", "is_24h": bool} or None
+    """
+    url = STORE_URL.format(group=group, store_key=store_key)
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        if resp.status_code == 200:
+            data = resp.json()
+            store = data.get("store", {})
+            details = store.get("details", {})
+
+            # 営業時間（分単位 → HH:MM形式に変換）
+            svc_hours = details.get("restaurantServiceHours", {})
+            def mins_to_hhmm(m):
+                if m is None: return None
+                h, mn = divmod(int(m), 60)
+                return f"{h:02d}:{mn:02d}"
+
+            hours = {}
+            for day_key, js_key in [("weekday","weekdays"),("saturday","saturday"),("holiday","holiday")]:
+                entry = svc_hours.get(js_key)
+                if entry:
+                    hours[day_key] = {
+                        "open":  mins_to_hhmm(entry.get("start")),
+                        "close": mins_to_hhmm(entry.get("end")),
+                    }
+
+            # 24時間判定（features.open24Hours）
+            features = details.get("features", {})
+            is_24h = bool(features.get("open24Hours", False))
+
+            # priceTier（"1"=standard, "2"=semi_urban?, "3"=urban?, "4"=special?）
+            price_tier_raw = details.get("priceTier")
+
+            return {
+                "hours": hours,
+                "price_tier_raw": price_tier_raw,
+                "is_24h": is_24h,
+            }
+        elif resp.status_code == 404:
+            return None
+        else:
+            log.warning(f"    store.json HTTP {resp.status_code}: {store_key}")
+            return None
+    except Exception as e:
+        log.warning(f"    store.json 取得失敗: {store_key} - {e}")
+        return None
+
+
+def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | None]:
     """
     CDNメニューAPIからビッグマック（1215）のEATIN価格を取得する。
     戻り値: (price, failure_reason)
     """
-    url = MENU_URL.format(store_key=store_key)
+    url = MENU_URL.format(group=group, store_key=store_key)
 
     for attempt in range(1, MAX_RETRY_COUNT + 1):
         try:
@@ -372,9 +436,17 @@ def parse_conditions(values: list[int]) -> dict:
     return flags
 
 
-def build_shop_record(poi: dict, pref_code: str, price: int | None, failure_reason: str | None) -> dict:
-    """POI + 価格情報から店舗レコードを生成する。"""
+def build_shop_record(poi: dict, pref_code: str, price: int | None, failure_reason: str | None, detail: dict | None = None) -> dict:
+    """POI + 価格情報 + store.json詳細から店舗レコードを生成する。"""
     conditions = parse_conditions(poi.get("condition_values", []))
+
+    # 営業時間: store.jsonのrestaurantServiceHoursを優先、なければPOIのis_24hのみ
+    hours = {}
+    is_24h = conditions.get("is_24h", False)
+    if detail:
+        hours = detail.get("hours", {})
+        is_24h = detail.get("is_24h", is_24h)
+
     return {
         "id":               poi["key"],
         "internal_id":      poi["id"],
@@ -384,9 +456,11 @@ def build_shop_record(poi: dict, pref_code: str, price: int | None, failure_reas
         "address":          poi.get("address", ""),
         "bigmac_price":     price,
         "price_tier":       determine_price_tier(price),
+        "price_tier_raw":   detail.get("price_tier_raw") if detail else None,
         "price_fetch_status": failure_reason or "ok",
+        "hours":            hours,
         "options": {
-            "is_24h":           conditions.get("is_24h", False),
+            "is_24h":           is_24h,
             "drive_thru":       conditions.get("drive_thru", False),
             "delivery":         conditions.get("delivery", False),
             "breakfast":        conditions.get("breakfast", False),
@@ -424,8 +498,8 @@ def _update_shop_price(store_key: str, price: int):
 # 県スクレイプ処理
 # ============================================================
 
-def scrape_prefecture(pref_code: str) -> bool:
-    """POI取得 → 各店舗のメニューAPIで価格取得の2ステップ構成。"""
+def scrape_prefecture(pref_code: str, group_cache: dict) -> bool:
+    """POI取得 → store.json（営業時間・priceTier）+ menu.json（価格）の3ステップ構成。"""
     config = PREFECTURE_CONFIG[pref_code]
     name   = config["name"]
     log.info(f"===== {pref_code}: {name} 開始 =====")
@@ -444,44 +518,51 @@ def scrape_prefecture(pref_code: str) -> bool:
             existing[shop["id"]] = shop
 
     shops_map   = {}
-    success_cnt = skip_cnt = 0
+    success_cnt = skip_cnt = no_group_cnt = 0
 
     for i, poi in enumerate(poi_list, 1):
         store_key  = poi.get("key", "")
         store_name = poi.get("name", "")
         log.info(f"  [{i}/{len(poi_list)}] {store_name} ({store_key})")
 
-        # 永続スキップ（not_supported / no_bigmac）は既存データをそのまま使う
+        group = group_cache.get(store_key)
+        if not group:
+            log.warning(f"    グループ未特定: {store_key} → build_group_cache.py を実行してください")
+            no_group_cnt += 1
+            # グループ不明でも既存データがあれば保持
+            shops_map[store_key] = existing.get(store_key) or build_shop_record(poi, pref_code, None, None, "no_group")
+            continue
+
+        # 永続スキップ（not_supported / no_bigmac）
         cached = existing.get(store_key, {})
         status = cached.get("price_fetch_status", "")
         if status in ("not_supported", "no_bigmac"):
             log.info(f"    → スキップ（{status}）")
-            shops_map[store_key] = cached or build_shop_record(poi, pref_code, None, status)
+            shops_map[store_key] = cached
             skip_cnt += 1
             continue
 
-        price, reason = fetch_bigmac_price(store_key)
+        # Step1: store.json から営業時間・priceTier取得
+        detail = fetch_store_detail(store_key, group)
+        time.sleep(random.uniform(1.0, 2.0))
+
+        # Step2: menu.json からビッグマック価格取得
+        price, reason = fetch_bigmac_price(store_key, group)
+        time.sleep(random.uniform(1.0, 2.0))
 
         if price is not None:
             tier = determine_price_tier(price)
-            log.info(f"    ビッグマック: {price}円 → {tier}")
+            log.info(f"    価格: {price}円 → {tier} / priceTier_raw: {detail.get('price_tier_raw') if detail else '?'}")
             success_cnt += 1
         else:
-            log.warning(f"    失敗: {store_key} - {reason}")
+            log.warning(f"    失敗: {reason}")
 
-        shops_map[store_key] = build_shop_record(poi, pref_code, price, reason)
-
-        # メニューAPIへの礼儀正しいウェイト
-        time.sleep(random.uniform(1.0, 3.0))
+        shops_map[store_key] = build_shop_record(poi, pref_code, price, reason, detail=detail)
 
     shops = [shops_map[p["key"]] for p in poi_list if p["key"] in shops_map]
     out_path.write_text(json.dumps(shops, ensure_ascii=False, indent=2))
-    log.info(f"{name}: {len(shops)}件保存（取得{success_cnt}件 スキップ{skip_cnt}件） → {out_path}")
+    log.info(f"{name}: {len(shops)}件保存（取得{success_cnt} スキップ{skip_cnt} グループ未特定{no_group_cnt}）")
     return True
-
-# ============================================================
-# エントリーポイント
-# ============================================================
 
 def main():
     parser = argparse.ArgumentParser()
@@ -494,6 +575,7 @@ def main():
     args = parser.parse_args()
 
     state = load_state()
+    group_cache = load_group_cache()
     today = datetime.now().strftime("%Y-%m-%d")
 
     if args.mode == "retry":
@@ -512,7 +594,7 @@ def main():
     log.info(f"本日の対象 ({BATCH_COUNT}県): {[PREFECTURE_CONFIG[c]['name'] for c in targets]}")
 
     for pref_code in targets:
-        success = scrape_prefecture(pref_code)
+        success = scrape_prefecture(pref_code, group_cache)
         if success:
             state["completed"].append(pref_code)
             state["last_run_date"] = today

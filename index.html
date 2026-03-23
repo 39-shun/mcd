@@ -61,6 +61,8 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
 .pref-item{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;cursor:pointer;border-left:2px solid transparent;transition:background .12s;gap:8px;}
 .pref-item:hover{background:rgba(212,34,42,.05);}
 .pref-item.active{background:rgba(212,34,42,.07);border-left-color:var(--accent);}
+.pref-item.selected{background:rgba(212,34,42,.10);border-left-color:var(--accent);}
+.pref-item.selected .pref-name::after{content:' ✓';font-size:10px;color:var(--accent);}
 .pref-name{font-size:13px;flex:1;}
 .pref-freshness{font-family:'DM Mono',monospace;font-size:10px;white-space:nowrap;padding:2px 5px;background:var(--surface2);border-radius:3px;color:var(--text-sub);}
 .pref-freshness.fresh{color:#3aaa72;background:rgba(58,170,114,.1);}
@@ -191,7 +193,10 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
   <aside id="sidebar">
     <div class="accordion-header" onclick="toggleAccordion('pref')">
       <span>都道府県</span>
-      <span class="accordion-arrow open" id="pref-arrow">▼</span>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span id="pref-clear-btn" onclick="event.stopPropagation();clearPrefSelection()" style="display:none;font-size:10px;padding:2px 7px;border-radius:10px;background:var(--accent);color:var(--accent-fg);cursor:pointer;font-weight:700;">解除</span>
+        <span class="accordion-arrow open" id="pref-arrow">▼</span>
+      </div>
     </div>
     <div class="accordion-body open" id="pref-accordion-body">
       <div id="pref-list-body"></div>
@@ -374,7 +379,8 @@ const PREFECTURE_CONFIG = {
 // 状態
 // ============================================================
 const state = {
-  currentPref:null, tileLayer:null, summaryGroup:null, detailGroup:null,
+  currentPref:null, selectedPrefs:new Set(), tileLayer:null,
+  summaryGroup:null, summaryData:null, detailGroup:null,
   detailCache:{}, prefetchQueue:[], prefetching:false,
   originLat:null, originLng:null, originMarker:null, customPinMode:false,
   filters:{ tier:'all', options:new Set(), hours:null },
@@ -491,15 +497,25 @@ function hideLoading(){document.getElementById('loading').classList.remove('acti
 // フィルター
 // ============================================================
 function isOpenAt(shop,d){
-  // 24時間フラグがある場合
   if(shop.options?.is_24h) return true;
-  // 詳細営業時間がある場合（将来対応）
-  const day=DAYS[d.getDay()];
-  const o=shop.hours?.[day]?.open, c=shop.hours?.[day]?.close;
-  if(!o||!c) return null;
-  const hm=t=>{const[h,m]=t.split(':').map(Number);return h*60+m;};
-  const now=d.getHours()*60+d.getMinutes(),ov=hm(o),cv=hm(c);
-  return cv>ov?(now>=ov&&now<cv):(now>=ov||now<cv);
+  if(!shop.hours || Object.keys(shop.hours).length===0) return null; // データなし→不明
+
+  // マックのhours: {weekday:{open:"HH:MM",close:"HH:MM"}, saturday:{...}, holiday:{...}}
+  const dow = d.getDay(); // 0=日,1=月〜5=金,6=土
+  let key;
+  if(dow===6) key='saturday';
+  else if(dow===0) key='holiday'; // 日曜はholidayで近似
+  else key='weekday';
+
+  const entry = shop.hours?.[key] || shop.hours?.weekday;
+  if(!entry?.open || !entry?.close) return null;
+
+  const hm = t => { const[h,m]=t.split(':').map(Number); return h*60+m; };
+  const now = d.getHours()*60+d.getMinutes();
+  const ov=hm(entry.open), cv=hm(entry.close);
+  // 日をまたぐ営業時間（例: 07:00〜25:00相当）は close>1440 でも対応
+  if(cv>ov) return now>=ov && now<cv;
+  return now>=ov || now<cv; // 深夜営業（日跨ぎ）
 }
 
 function passesFilter(shop){
@@ -567,7 +583,19 @@ function initFilters(){
 }
 
 function redrawAfterFilter(){
-  if(state.currentPref&&state.detailCache[state.currentPref]) renderDetailMarkers(state.detailCache[state.currentPref]);
+  if(state.summaryData&&state.selectedPrefs.size===0){
+    if(state.summaryGroup) map.removeLayer(state.summaryGroup);
+    state.summaryGroup=L.markerClusterGroup({maxClusterRadius:60,spiderfyOnMaxZoom:true,showCoverageOnHover:false,iconCreateFunction:clusterIcon});
+    for(const s of state.summaryData){
+      if(!s.coords) continue;
+      if(!passesFilter(s)) continue;
+      const m=L.circleMarker(s.coords,{radius:5,color:'rgba(0,0,0,.15)',weight:1,fillColor:getTierColor(s.price_tier),fillOpacity:.88});
+      m.on('click',()=>{ if(state.selectedPrefs.size>0) return; selectPref(String(s.prefecture_code).padStart(2,'0')); });
+      state.summaryGroup.addLayer(m);
+    }
+    map.addLayer(state.summaryGroup);
+  }
+  if(state.selectedPrefs.size>0) renderAllSelectedPrefs();
   if(state.originLat!==null) renderList(getAllCachedShops());
 }
 
@@ -596,10 +624,15 @@ async function loadSummary(){
     if(!res.ok) throw new Error('not found');
     const shops=await res.json();
     state.summaryGroup=L.markerClusterGroup({maxClusterRadius:60,spiderfyOnMaxZoom:true,showCoverageOnHover:false,iconCreateFunction:clusterIcon});
+    state.summaryData=shops;
     for(const s of shops){
       if(!s.coords) continue;
+      if(!passesFilter(s)) continue;
       const m=L.circleMarker(s.coords,{radius:5,color:'rgba(0,0,0,.15)',weight:1,fillColor:getTierColor(s.price_tier),fillOpacity:.88});
-      m.on('click',()=>selectPref(String(s.prefecture_code).padStart(2,'0')));
+      m.on('click',()=>{
+        if(state.selectedPrefs.size>0) return;
+        selectPref(String(s.prefecture_code).padStart(2,'0'));
+      });
       state.summaryGroup.addLayer(m);
     }
     map.addLayer(state.summaryGroup);
@@ -610,10 +643,17 @@ async function loadSummary(){
 // ============================================================
 // 詳細マーカー描画
 // ============================================================
-function renderDetailMarkers(shops){
+function renderDetailMarkers(shops){ renderAllSelectedPrefs(); }
+
+function renderAllSelectedPrefs(){
   if(state.detailGroup) map.removeLayer(state.detailGroup);
   state.markerMap={};
-  const filtered=shops.filter(passesFilter);
+  let allShops=[];
+  for(const code of state.selectedPrefs){
+    const d=state.detailCache[code];
+    if(d) allShops=allShops.concat(d);
+  }
+  const filtered=allShops.filter(passesFilter);
   state.detailGroup=L.markerClusterGroup({maxClusterRadius:50,spiderfyOnMaxZoom:true,showCoverageOnHover:false,iconCreateFunction:clusterIcon});
   for(const shop of filtered){
     if(!shop.coords?.length) continue;
@@ -707,10 +747,7 @@ function setOrigin(lat,lng,label='📍 基点'){
   renderList(getAllCachedShops());
   const code=detectPrefFromCoords(lat,lng);
   if(code){
-    fetchDetail(code).then(shops=>{
-      if(shops){renderDetailMarkers(shops);selectPrefUI(code);}
-      renderList(getAllCachedShops());
-    });
+    fetchDetail(code).then(()=>renderList(getAllCachedShops()));
     prefetchNeighbors(code);
   }
 }
@@ -749,25 +786,45 @@ function updateFreshness(code,iso){
   const opt=document.getElementById(`opt-${code}`);
   if(opt) opt.textContent=`${PREFECTURE_CONFIG[code].name}  [${label}]`;
 }
-function selectPrefUI(code){
-  state.currentPref=code;
-  document.querySelectorAll('.pref-item').forEach(el=>el.classList.toggle('active',el.dataset.code===code));
-  document.getElementById('pref-select-mobile').value=code;
-}
+function selectPrefUI(code){ state.currentPref=code; }
 async function selectPref(code){
   if(!PREFECTURE_CONFIG[code]) return;
-  selectPrefUI(code);
-  showLoading(`${PREFECTURE_CONFIG[code].name}を読み込み中...`);
-  const shops=await fetchDetail(code);
-  hideLoading();
-  if(!shops) return;
-  renderDetailMarkers(shops);
-  map.fitBounds(PREFECTURE_CONFIG[code].bounds,{padding:[20,20]});
-  const iso=shops.reduce((l,s)=>(!l||s.scraped_at>l)?s.scraped_at:l,null);
-  updateFreshness(code,iso);
-  prefetchNeighbors(code);
+  if(state.selectedPrefs.has(code)){
+    state.selectedPrefs.delete(code);
+    document.querySelector(`.pref-item[data-code="${code}"]`)?.classList.remove('selected','active');
+  } else {
+    state.selectedPrefs.add(code);
+    document.querySelector(`.pref-item[data-code="${code}"]`)?.classList.add('selected','active');
+    showLoading(`${PREFECTURE_CONFIG[code].name}を読み込み中...`);
+    await fetchDetail(code);
+    hideLoading();
+    const shops=state.detailCache[code];
+    if(shops){
+      const iso=shops.reduce((l,s)=>(!l||s.scraped_at>l)?s.scraped_at:l,null);
+      updateFreshness(code,iso);
+    }
+    prefetchNeighbors(code);
+  }
+  const btn=document.getElementById('pref-clear-btn');
+  if(btn) btn.style.display=state.selectedPrefs.size>0?'inline':'none';
+  if(state.selectedPrefs.size>0){
+    if(state.summaryGroup) map.removeLayer(state.summaryGroup);
+  } else {
+    if(state.summaryGroup) map.addLayer(state.summaryGroup);
+  }
+  renderAllSelectedPrefs();
   if(state.originLat!==null) renderList(getAllCachedShops());
 }
+
+window.clearPrefSelection=function(){
+  state.selectedPrefs.clear();
+  state.currentPref=null;
+  document.querySelectorAll('.pref-item').forEach(el=>el.classList.remove('selected','active'));
+  const btn=document.getElementById('pref-clear-btn');
+  if(btn) btn.style.display='none';
+  if(state.summaryGroup) map.addLayer(state.summaryGroup);
+  if(state.detailGroup){ map.removeLayer(state.detailGroup); state.detailGroup=null; }
+};
 
 // ============================================================
 // バックグラウンド先読み
@@ -786,9 +843,38 @@ async function prefetchNeighbors(code){
   state.prefetching=false;
 }
 map.on('zoomend',()=>{
-  if(map.getZoom()<9) return;
-  const code=detectPrefFromCoords(map.getCenter().lat,map.getCenter().lng);
-  if(code&&!state.detailCache[code]) fetchDetail(code);
+  const zoom=map.getZoom();
+  if(state.selectedPrefs.size===0 && zoom>=9){
+    const bounds=map.getBounds();
+    const toLoad=[];
+    for(const [code,cfg] of Object.entries(PREFECTURE_CONFIG)){
+      const[[s,w],[n,e]]=cfg.bounds;
+      if(bounds.getSouth()<=n&&bounds.getNorth()>=s&&bounds.getWest()<=e&&bounds.getEast()>=w)
+        toLoad.push(code);
+    }
+    if(toLoad.length>0){
+      if(state.summaryGroup) map.removeLayer(state.summaryGroup);
+      Promise.all(toLoad.map(c=>fetchDetail(c))).then(()=>{
+        if(state.detailGroup) map.removeLayer(state.detailGroup);
+        state.markerMap={};
+        let allShops=[];
+        for(const c of toLoad){ if(state.detailCache[c]) allShops=allShops.concat(state.detailCache[c]); }
+        const filtered=allShops.filter(passesFilter);
+        state.detailGroup=L.markerClusterGroup({maxClusterRadius:50,spiderfyOnMaxZoom:true,showCoverageOnHover:false,iconCreateFunction:clusterIcon});
+        for(const shop of filtered){
+          if(!shop.coords?.length) continue;
+          const marker=L.marker(shop.coords,{icon:makeIcon(shop.price_tier)});
+          marker.bindPopup(buildPopup(shop),{maxWidth:270});
+          state.detailGroup.addLayer(marker);
+          state.markerMap[shop.id]=marker;
+        }
+        map.addLayer(state.detailGroup);
+      });
+    }
+  } else if(state.selectedPrefs.size===0 && zoom<9){
+    if(state.detailGroup){map.removeLayer(state.detailGroup);state.detailGroup=null;}
+    if(state.summaryGroup) map.addLayer(state.summaryGroup);
+  }
 });
 function detectPrefFromCoords(lat,lng){
   for(const[code,cfg] of Object.entries(PREFECTURE_CONFIG)){
