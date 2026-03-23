@@ -398,30 +398,43 @@ def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | No
                 try:
                     data = resp.json()
                     
-                    # JSON全体を探索して "productCode" == "1210" の辞書を探す関数
-                    def find_price(obj):
-                        if isinstance(obj, dict):
-                            if obj.get("productCode") == BIG_MAC_CODE:
-                                return obj.get("price")
-                            for v in obj.values():
-                                res = find_price(v)
-                                if res is not None:
-                                    return res
-                        elif isinstance(obj, list):
-                            for item in obj:
-                                res = find_price(item)
-                                if res is not None:
-                                    return res
-                        return None
+                    # 再帰上限を回避するためのスタック全探索
+                    stack = [data]
+                    while stack:
+                        curr = stack.pop()
+                        if isinstance(curr, dict):
+                            # パターン1: "1210" がキー自体になっている場合
+                            if "1210" in curr and isinstance(curr["1210"], dict):
+                                val = curr["1210"]
+                                if "price" in val:
+                                    return int(val["price"]), None
+                                if "priceList" in val:
+                                    for p in val["priceList"]:
+                                        if p.get("priceCode") == "EATIN":
+                                            return int(p.get("price")), None
 
-                    # 探索実行
-                    price = find_price(data)
-                    
-                    if price is not None:
-                        return int(price), None
-                    else:
-                        log.warning(f"    ビッグマック(1210)が見つかりません: {store_key}")
-                        return None, "no_bigmac"
+                            # パターン2: productCodeやidの値として 1210 を持っている場合
+                            is_target = False
+                            for k in ["productCode", "id", "itemCode", "code"]:
+                                if str(curr.get(k)) == "1210":
+                                    is_target = True
+                                    break
+                                    
+                            if is_target:
+                                if "price" in curr:
+                                    return int(curr["price"]), None
+                                if "priceList" in curr:
+                                    for p in curr["priceList"]:
+                                        if p.get("priceCode") == "EATIN":
+                                            return int(p.get("price")), None
+                            
+                            stack.extend(v for v in curr.values() if isinstance(v, (dict, list)))
+                        elif isinstance(curr, list):
+                            stack.extend(item for item in curr if isinstance(item, (dict, list)))
+
+                    # 探索して見つからなかった場合
+                    log.warning(f"    ビッグマック(1210)が見つかりません: {store_key}")
+                    return None, "no_bigmac"
 
                 except Exception as e:
                     log.warning(f"    JSONパース失敗: {store_key} - {e}")
