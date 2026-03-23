@@ -70,7 +70,7 @@ def _load_env():
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, _, val = line.partition("=")
-        os.environ.setdefault(key.strip(), val.strip())
+        os.environ.setdefault(key.strip(), val.strip().strip("'""))
 
 _load_env()
 
@@ -86,9 +86,11 @@ def _discord_post(webhook_url: str, content: str):
     try:
         # Discordの1メッセージ上限は2000文字
         content = content[:1990] + "…" if len(content) > 1990 else content
-        requests.post(webhook_url, json={"content": content}, timeout=10)
-    except Exception:
-        log.warning("Discord通知の送信に失敗しました（処理は継続します）")
+        resp = requests.post(webhook_url, json={"content": content}, timeout=10)
+        if resp.status_code >= 400:
+            log.warning(f"Discord通知失敗 HTTP {resp.status_code}: {resp.text[:200]}")
+    except Exception as e:
+        log.warning(f"Discord通知の送信に失敗しました（処理は継続します）: {e}")
 
 
 def notify_diff(diffs: list):
