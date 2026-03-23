@@ -385,7 +385,7 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
 
 def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | None]:
     """
-    CDNメニューAPIからビッグマック（1210）のEATIN価格を取得する。
+    CDNメニューAPIからビッグマック（1210）の価格を取得する。
     戻り値: (price, failure_reason)
     """
     url = MENU_URL.format(group=group, store_key=store_key)
@@ -397,14 +397,33 @@ def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | No
             if resp.status_code == 200:
                 try:
                     data = resp.json()
-                    price_list = data[BIG_MAC_CODE]["priceList"]
-                    for entry in price_list:
-                        if entry.get("priceCode") == "EATIN":
-                            return int(entry["price"]), None
-                    # EATINが見つからない場合
-                    log.warning(f"    EATIN価格なし: {store_key} priceList={price_list}")
-                    return None, "no_eatin_price"
-                except (KeyError, TypeError, ValueError) as e:
+                    
+                    # JSON全体を探索して "productCode" == "1210" の辞書を探す関数
+                    def find_price(obj):
+                        if isinstance(obj, dict):
+                            if obj.get("productCode") == BIG_MAC_CODE:
+                                return obj.get("price")
+                            for v in obj.values():
+                                res = find_price(v)
+                                if res is not None:
+                                    return res
+                        elif isinstance(obj, list):
+                            for item in obj:
+                                res = find_price(item)
+                                if res is not None:
+                                    return res
+                        return None
+
+                    # 探索実行
+                    price = find_price(data)
+                    
+                    if price is not None:
+                        return int(price), None
+                    else:
+                        log.warning(f"    ビッグマック(1210)が見つかりません: {store_key}")
+                        return None, "no_bigmac"
+
+                except Exception as e:
                     log.warning(f"    JSONパース失敗: {store_key} - {e}")
                     return None, "no_bigmac"
 
@@ -413,7 +432,7 @@ def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | No
                 return None, "not_supported"
 
             else:
-                log.warning(f"    HTTP {resp.status_code} (試行 {attempt}/{MAX_RETRY_COUNT}) 内容: {resp.text[:100]}")
+                log.warning(f"    HTTP {resp.status_code} (試行 {attempt}/{MAX_RETRY_COUNT})")
 
         except requests.Timeout:
             log.warning(f"    タイムアウト (試行 {attempt}/{MAX_RETRY_COUNT})")
