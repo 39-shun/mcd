@@ -520,7 +520,7 @@ def scrape_prefecture(pref_code: str, group_cache: dict) -> bool:
             log.warning(f"    グループ未特定: {store_key} → build_group_cache.py を実行してください")
             no_group_cnt += 1
             # グループ不明でも既存データがあれば保持
-            shops_map[store_key] = existing.get(store_key) or build_shop_record(poi, pref_code, None, None, "no_group")
+            shops_map[store_key] = existing.get(store_key) or build_shop_record(poi, pref_code, None, "no_group", None)
             continue
 
         # 永続スキップ（not_supported / no_bigmac）
