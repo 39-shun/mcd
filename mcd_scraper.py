@@ -383,79 +383,126 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
         return None
 
 
-def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | None]:
+def fetch_bigmac_price(store_key: str, group: str) -> int | None:
     """
-    CDNメニューAPIからビッグマックの価格を取得する。
-    戻り値: (price, failure_reason)
+    モバイルオーダー用CDNからビッグマック（商品コード1210）の
+    イートイン価格を取得して整数で返す。取得できない場合は None を返す。
+
+    探索戦略:
+      1. JSON全体を再帰的に走査し、
+         productCode / id / itemCode / code のいずれかが
+         "1210" または 1210 (数値) である辞書を収集する。
+      2. 見つかった辞書から priceList[EATIN] または price を抽出する。
+      3. 価格が 400 以上のもの（ノイズ除外）を最終候補とする。
+      4. 名前に「セット」「倍」が含まれるものを除外する。
     """
-    url = MENU_URL.format(group=group, store_key=store_key)
+    import requests
+    import logging
 
-    for attempt in range(1, MAX_RETRY_COUNT + 1):
-        try:
-            resp = requests.get(url, headers=HEADERS, timeout=15)
+    log = logging.getLogger(__name__)
 
-            if resp.status_code == 200:
-                try:
-                    data = resp.json()
-                    
-                    # IDへの依存を捨て、商品名「ビッグマック」で全探索する
-                    stack = [data]
-                    while stack:
-                        curr = stack.pop()
-                        if isinstance(curr, dict):
-                            # キー名に "name" や "title" を含む値を取得
-                            name_vals = [str(v) for k, v in curr.items() if "name" in k.lower() or "title" in k.lower()]
-                            
-                            is_bigmac = False
-                            for v in name_vals:
-                                val_str = v.strip()
-                                # 登録商標マーク(®)等のブレを吸収しつつ、セットや倍マックを除外
-                                if "ビッグマック" in val_str and "セット" not in val_str and "倍" not in val_str:
-                                    is_bigmac = True
-                                    break
-                            
-                            if is_bigmac:
-                                if "price" in curr:
-                                    return int(curr["price"]), None
-                                if "priceList" in curr:
-                                    for p in curr["priceList"]:
-                                        if p.get("priceCode") == "EATIN":
-                                            return int(p.get("price")), None
+    TARGET_CODE = {"1210", 1210}
+    CODE_KEYS   = {"productCode", "id", "itemCode", "code"}
+    MIN_PRICE   = 400       # カスタムオプション（0円）ノイズ除外の閾値
+    NOISE_WORDS = {"セット", "倍"}
 
-                            stack.extend(v for v in curr.values() if isinstance(v, (dict, list)))
-                        elif isinstance(curr, list):
-                            stack.extend(item for item in curr if isinstance(item, (dict, list)))
+    url = (
+        f"https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com"
+        f"/{store_key}/menu.json"
+    )
 
-                    # 探索して見つからなかった場合、原因究明のために生のJSONを保存する
-                    debug_file = DATA_DIR / f"debug_{store_key}.json"
-                    if not debug_file.exists():
-                        debug_file.write_text(json.dumps(data, ensure_ascii=False, indent=2))
-                    
-                    log.warning(f"    ビッグマックが見つかりません: {store_key} (生データを {debug_file.name} に保存しました)")
-                    return None, "no_bigmac"
+    try:
+        resp = requests.get(url, timeout=15)
+        if resp.status_code != 200:
+            log.warning(
+                f"    [{store_key}] menu.json HTTP {resp.status_code}: "
+                f"{resp.text[:100]}"
+            )
+            return None
+        data = resp.json()
+    except Exception as e:
+        log.warning(f"    [{store_key}] menu.json 取得/パース失敗: {e}")
+        return None
 
-                except Exception as e:
-                    log.warning(f"    JSONパース失敗: {store_key} - {e}")
-                    return None, "no_bigmac"
+    # ── 1. JSON 全探索（スタック方式、再帰なし） ──────────────────────
+    candidates: list[dict] = []   # 商品コード 1210 の辞書候補
+    stack = [data]
 
-            elif resp.status_code == 404:
-                log.warning(f"    404: {store_key} - モバイルオーダー非対応店")
-                return None, "not_supported"
+    while stack:
+        node = stack.pop()
 
-            else:
-                log.warning(f"    HTTP {resp.status_code} (試行 {attempt}/{MAX_RETRY_COUNT})")
+        if isinstance(node, list):
+            stack.extend(node)
 
-        except requests.Timeout:
-            log.warning(f"    タイムアウト (試行 {attempt}/{MAX_RETRY_COUNT})")
-        except requests.RequestException as e:
-            log.warning(f"    接続エラー: {e} (試行 {attempt}/{MAX_RETRY_COUNT})")
+        elif isinstance(node, dict):
+            # コードキーのいずれかが 1210 なら候補追加
+            for ck in CODE_KEYS:
+                if node.get(ck) in TARGET_CODE:
+                    candidates.append(node)
+                    break
+            # 子要素も引き続き探索
+            stack.extend(node.values())
 
-        if attempt < MAX_RETRY_COUNT:
-            wait = random.uniform(5, 15)
-            log.info(f"    {wait:.1f}秒後リトライ...")
-            time.sleep(wait)
+    if not candidates:
+        log.warning(f"    [{store_key}] 商品コード 1210 の辞書が見つかりませんでした")
+        return None
 
-    return None, "temp_error"
+    log.debug(f"    [{store_key}] 1210 の候補辞書 {len(candidates)} 件")
+
+    # ── 2. 各候補から価格を抽出してフィルタリング ────────────────────
+    def extract_price(node: dict) -> int | None:
+        """
+        priceList[EATIN] → price の順で価格を探す。
+        見つからなければ None。
+        """
+        price_list = node.get("priceList")
+        if isinstance(price_list, list):
+            for entry in price_list:
+                if isinstance(entry, dict) and entry.get("priceCode") == "EATIN":
+                    p = entry.get("price")
+                    if isinstance(p, (int, float)):
+                        return int(p)
+
+        # priceList がない、または EATIN が見つからない場合
+        p = node.get("price")
+        if isinstance(p, (int, float)):
+            return int(p)
+
+        return None
+
+    valid_prices: list[int] = []
+
+    for node in candidates:
+        price = extract_price(node)
+        if price is None:
+            continue
+        if price < MIN_PRICE:
+            log.debug(
+                f"    [{store_key}] 価格 {price}円 → MIN_PRICE 未満のためスキップ "
+                f"(name={node.get('name', node.get('itemName', ''))})"
+            )
+            continue
+
+        # 名前ノイズチェック（セット・倍）
+        name = str(node.get("name", node.get("itemName", "")))
+        if any(w in name for w in NOISE_WORDS):
+            log.debug(f"    [{store_key}] '{name}' → ノイズワードのためスキップ")
+            continue
+
+        log.debug(f"    [{store_key}] 候補: '{name}' {price}円")
+        valid_prices.append(price)
+
+    if not valid_prices:
+        log.warning(
+            f"    [{store_key}] フィルタ後に有効な価格が残りませんでした "
+            f"(候補数={len(candidates)})"
+        )
+        return None
+
+    # 複数候補がある場合は最小値（単品＝最安）を採用
+    result = min(valid_prices)
+    log.info(f"    [{store_key}] ビッグマック(単品) EATIN {result}円")
+    return result, None
 
 
 def parse_conditions(values: list[int]) -> dict:
