@@ -383,126 +383,39 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
         return None
 
 
-def fetch_bigmac_price(store_key: str, group: str) -> int | None:
-    """
-    モバイルオーダー用CDNからビッグマック（商品コード1210）の
-    イートイン価格を取得して整数で返す。取得できない場合は None を返す。
-
-    探索戦略:
-      1. JSON全体を再帰的に走査し、
-         productCode / id / itemCode / code のいずれかが
-         "1210" または 1210 (数値) である辞書を収集する。
-      2. 見つかった辞書から priceList[EATIN] または price を抽出する。
-      3. 価格が 400 以上のもの（ノイズ除外）を最終候補とする。
-      4. 名前に「セット」「倍」が含まれるものを除外する。
-    """
-    import requests
-    import logging
-
-    log = logging.getLogger(__name__)
-
-    TARGET_CODE = {"1210", 1210}
-    CODE_KEYS   = {"productCode", "id", "itemCode", "code"}
-    MIN_PRICE   = 400       # カスタムオプション（0円）ノイズ除外の閾値
-    NOISE_WORDS = {"セット", "倍"}
-
-    url = (
-        f"https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com"
-        f"/{store_key}/menu.json"
-    )
-
-    try:
-        resp = requests.get(url, timeout=15)
-        if resp.status_code != 200:
-            log.warning(
-                f"    [{store_key}] menu.json HTTP {resp.status_code}: "
-                f"{resp.text[:100]}"
-            )
-            return None
-        data = resp.json()
-    except Exception as e:
-        log.warning(f"    [{store_key}] menu.json 取得/パース失敗: {e}")
-        return None
-
-    # ── 1. JSON 全探索（スタック方式、再帰なし） ──────────────────────
-    candidates: list[dict] = []   # 商品コード 1210 の辞書候補
-    stack = [data]
-
-    while stack:
-        node = stack.pop()
-
-        if isinstance(node, list):
-            stack.extend(node)
-
-        elif isinstance(node, dict):
-            # コードキーのいずれかが 1210 なら候補追加
-            for ck in CODE_KEYS:
-                if node.get(ck) in TARGET_CODE:
-                    candidates.append(node)
-                    break
-            # 子要素も引き続き探索
-            stack.extend(node.values())
-
-    if not candidates:
-        log.warning(f"    [{store_key}] 商品コード 1210 の辞書が見つかりませんでした")
-        return None
-
-    log.debug(f"    [{store_key}] 1210 の候補辞書 {len(candidates)} 件")
-
-    # ── 2. 各候補から価格を抽出してフィルタリング ────────────────────
-    def extract_price(node: dict) -> int | None:
-        """
-        priceList[EATIN] → price の順で価格を探す。
-        見つからなければ None。
-        """
-        price_list = node.get("priceList")
-        if isinstance(price_list, list):
-            for entry in price_list:
-                if isinstance(entry, dict) and entry.get("priceCode") == "EATIN":
-                    p = entry.get("price")
-                    if isinstance(p, (int, float)):
-                        return int(p)
-
-        # priceList がない、または EATIN が見つからない場合
-        p = node.get("price")
-        if isinstance(p, (int, float)):
-            return int(p)
-
-        return None
-
-    valid_prices: list[int] = []
-
-    for node in candidates:
-        price = extract_price(node)
-        if price is None:
-            continue
-        if price < MIN_PRICE:
-            log.debug(
-                f"    [{store_key}] 価格 {price}円 → MIN_PRICE 未満のためスキップ "
-                f"(name={node.get('name', node.get('itemName', ''))})"
-            )
-            continue
-
-        # 名前ノイズチェック（セット・倍）
-        name = str(node.get("name", node.get("itemName", "")))
-        if any(w in name for w in NOISE_WORDS):
-            log.debug(f"    [{store_key}] '{name}' → ノイズワードのためスキップ")
-            continue
-
-        log.debug(f"    [{store_key}] 候補: '{name}' {price}円")
-        valid_prices.append(price)
-
-    if not valid_prices:
-        log.warning(
-            f"    [{store_key}] フィルタ後に有効な価格が残りませんでした "
-            f"(候補数={len(candidates)})"
-        )
-        return None
-
-    # 複数候補がある場合は最小値（単品＝最安）を採用
-    result = min(valid_prices)
-    log.info(f"    [{store_key}] ビッグマック(単品) EATIN {result}円")
-    return result, None
+def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | None]:
+    BIGMAC_CODE = "1215"
+    url = f"https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{store_key}/menu.json"
+    
+    for attempt in range(1, MAX_RETRY_COUNT + 1):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=15)
+            if resp.status_code == 200:
+                data = resp.json()
+                item = data.get("products", {}).get(BIGMAC_CODE)
+                if item is None:
+                    log.warning(f"    [{store_key}] 商品コード {BIGMAC_CODE} が見つかりません")
+                    return None, "no_bigmac"
+                for p in item.get("priceList", []):
+                    if p.get("priceCode") == "EATIN":
+                        return int(p["price"]), None
+                # priceListにEATINがない場合フォールバック
+                price = item.get("price", {}).get("price")
+                if price:
+                    return int(price), None
+                return None, "no_bigmac"
+            elif resp.status_code == 404:
+                return None, "not_supported"
+            else:
+                log.warning(f"    HTTP {resp.status_code} (試行 {attempt}/{MAX_RETRY_COUNT}) 内容: {resp.text[:100]}")
+        except requests.Timeout:
+            log.warning(f"    タイムアウト (試行 {attempt}/{MAX_RETRY_COUNT})")
+        except Exception as e:
+            log.warning(f"    エラー: {e} (試行 {attempt}/{MAX_RETRY_COUNT})")
+        if attempt < MAX_RETRY_COUNT:
+            wait = random.uniform(5, 15)
+            time.sleep(wait)
+    return None, "temp_error"
 
 
 def parse_conditions(values: list[int]) -> dict:
