@@ -517,6 +517,9 @@ def scrape_prefecture(pref_code: str, group_cache: dict) -> bool:
     for i, poi in enumerate(poi_list, 1):
         store_key  = poi.get("key", "")
         store_name = poi.get("name", "")
+        if not store_key.startswith(pref_code):
+            log.debug(f"  スキップ（他県店舗）: {store_name} ({store_key})")
+            continue
         log.info(f"  [{i}/{len(poi_list)}] {store_name} ({store_key})")
 
         group = group_cache.get(store_key)
