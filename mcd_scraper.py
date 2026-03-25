@@ -44,10 +44,12 @@ BATCH_COUNT = 7   # 1日に処理する県数。急ぎたいときは5〜7に増
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
+BACKUP_DIR = DATA_DIR / "backup"
 LOG_DIR  = BASE_DIR / "logs"
 STATE_FILE  = BASE_DIR / "last_run.json"
 
 DATA_DIR.mkdir(exist_ok=True)
+BACKUP_DIR.mkdir(exist_ok=True)
 LOG_DIR.mkdir(exist_ok=True)
 
 # ============================================================
@@ -83,7 +85,6 @@ def _discord_post(webhook_url: str, content: str):
     if not webhook_url:
         return
     try:
-        # Discordの1メッセージ上限は2000文字
         content = content[:1990] + "…" if len(content) > 1990 else content
         resp = requests.post(webhook_url, json={"content": content}, timeout=10)
         if resp.status_code >= 400:
@@ -97,7 +98,7 @@ def notify_diff(diffs: list):
     if not diffs or not WEBHOOK_DIFF:
         return
     lines = ["📢 **差分検知レポート**"]
-    for d in diffs[:20]:  # 多すぎる場合は先頭20件
+    for d in diffs[:20]:
         if d["type"] == "new_open":
             lines.append(f"🆕 新店: **{d['name']}** （{d.get('address','')}）")
         elif d["type"] == "closed":
@@ -157,19 +158,18 @@ STORE_URL     = "https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{st
 MENU_URL      = "https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{store_key}/menu.json"
 BIG_MAC_CODE  = "1210"
 GROUP_CACHE_FILE = BASE_DIR / "store_groups.json"
-MAX_RETRY_COUNT = 3  # メニュー取得リトライ回数
-MAX_RETRY_COUNT = 3  # メニュー取得リトライ回数
+MAX_RETRY_COUNT = 3
 
 # ============================================================
 # 失敗理由
 # ============================================================
 class FailureReason:
-    NOT_SUPPORTED = "not_supported"  # 404 / モバイルオーダー非対応
-    NO_BIGMAC     = "no_bigmac"      # メニューにビッグマックなし
-    TEMP_ERROR    = "temp_error"     # 一時的エラー（リトライ対象）
+    NOT_SUPPORTED = "not_supported"
+    NO_BIGMAC     = "no_bigmac"
+    TEMP_ERROR    = "temp_error"
 
 # ============================================================
-# 設備フラグ（condition_values インデックスマッピング）
+# 設備フラグ
 # ============================================================
 
 CONDITION_KEYS = {
@@ -188,13 +188,12 @@ CONDITION_KEYS = {
     12: "contactless_delivery",
     13: "birthday_party",
     14: "toy_recycle",
-    # 15〜17: 内部システム用
-    18: "special_location",  # 特殊立地店舗（参考情報として保持）
-    19: "specific_store",    # 特定店舗（参考情報として保持）
+    18: "special_location",
+    19: "specific_store",
 }
 
 # ============================================================
-# 都道府県設定（JIS X 0401準拠）
+# 都道府県設定
 # ============================================================
 
 PREFECTURE_CONFIG = {
@@ -247,17 +246,14 @@ PREFECTURE_CONFIG = {
     "47": {"name": "Okinawa",   "bounds": "24.00,122.90,27.10,131.35"},
 }
 
-# ============================================================
-# 失敗理由の定数
-# ============================================================
-
-
-# ============================================================
-# 失敗店舗の管理
-# ============================================================
-
-
-
+# 価格帯ごとの代表価格（diff通知用）
+TIER_PRICES = {
+    "standard":     500,
+    "semi_urban_b": 520,
+    "semi_urban_a": 530,
+    "urban":        550,
+    "special":      600,
+}
 
 
 def load_state() -> dict:
@@ -271,7 +267,6 @@ def save_state(state: dict):
 
 
 def load_group_cache() -> dict:
-    """store_groups.jsonを読み込む。"""
     if not GROUP_CACHE_FILE.exists():
         log.warning("store_groups.json が見つかりません。build_group_cache.py を先に実行してください。")
         return {}
@@ -282,22 +277,17 @@ def load_group_cache() -> dict:
 
 
 def get_next_prefectures(state: dict) -> list[str]:
-    """
-    未完了の都道府県から次のBATCH_COUNT件を返す。
-    全47県完了したら自動リセットして北海道から再開。
-    """
     all_codes = list(PREFECTURE_CONFIG.keys())
     completed = set(state.get("completed", []))
     pending = [c for c in all_codes if c not in completed]
-
     if not pending:
         days = round(47 / BATCH_COUNT)
         log.info(f"全47都道府県の調査完了。次のサイクルを開始します（約{days}日で一周）。")
         state["completed"] = []
         save_state(state)
         pending = all_codes
-
     return pending[:BATCH_COUNT]
+
 
 # ============================================================
 # APIクライアント
@@ -316,12 +306,13 @@ def fetch_poi(bounds: str) -> list[dict]:
         time.sleep(random.uniform(10, 20))
     return []
 
+
 # ============================================================
 # データ変換
 # ============================================================
 
 def determine_price_tier(price: int | None) -> str | None:
-    """価格（円）から価格帯を判定する。"""
+    """価格（円）から価格帯を判定する。完全一致。"""
     if price is None:
         return None
     if price <= 500:
@@ -331,16 +322,12 @@ def determine_price_tier(price: int | None) -> str | None:
     elif price <= 530:
         return "semi_urban_a"
     elif price <= 550:
-        return "urban_b"
+        return "urban"
     else:
-        return "urban_a"
+        return "special"
 
 
 def fetch_store_detail(store_key: str, group: str) -> dict | None:
-    """
-    store.jsonから営業時間・priceTier・座標を取得する。
-    戻り値: {"hours": {...}, "price_tier_raw": "1", "is_24h": bool} or None
-    """
     url = STORE_URL.format(group=group, store_key=store_key)
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -349,7 +336,6 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
             store = data.get("store", {})
             details = store.get("details", {})
 
-            # 営業時間（分単位 → HH:MM形式に変換）
             svc_hours = details.get("restaurantServiceHours", {})
             def mins_to_hhmm(m):
                 if m is None: return None
@@ -365,11 +351,8 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
                         "close": mins_to_hhmm(entry.get("end")),
                     }
 
-            # 24時間判定（features.open24Hours）
             features = details.get("features", {})
             is_24h = bool(features.get("open24Hours", False))
-
-            # priceTier（"1"=standard, "2"=semi_urban?, "3"=urban?, "4"=special?）
             price_tier_raw = details.get("priceTier")
 
             return {
@@ -390,7 +373,7 @@ def fetch_store_detail(store_key: str, group: str) -> dict | None:
 def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | None]:
     BIGMAC_CODE = "1215"
     url = f"https://data.cat.group-{group}.prod.mop.mcd.qorcommerce.com/{store_key}/menu.json"
-    
+
     for attempt in range(1, MAX_RETRY_COUNT + 1):
         try:
             resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -403,7 +386,6 @@ def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | No
                 for p in item.get("priceList", []):
                     if p.get("priceCode") == "EATIN":
                         return int(p["price"]), None
-                # priceListにEATINがない場合フォールバック
                 price = item.get("price", {}).get("price")
                 if price:
                     return int(price), None
@@ -417,8 +399,7 @@ def fetch_bigmac_price(store_key: str, group: str) -> tuple[int | None, str | No
         except Exception as e:
             log.warning(f"    エラー: {e} (試行 {attempt}/{MAX_RETRY_COUNT})")
         if attempt < MAX_RETRY_COUNT:
-            wait = random.uniform(5, 15)
-            time.sleep(wait)
+            time.sleep(random.uniform(5, 15))
     return None, "temp_error"
 
 
@@ -431,10 +412,8 @@ def parse_conditions(values: list[int]) -> dict:
 
 
 def build_shop_record(poi: dict, pref_code: str, price: int | None, failure_reason: str | None, detail: dict | None = None) -> dict:
-    """POI + 価格情報 + store.json詳細から店舗レコードを生成する。"""
     conditions = parse_conditions(poi.get("condition_values", []))
 
-    # 営業時間: store.jsonのrestaurantServiceHoursを優先、なければPOIのis_24hのみ
     hours = {}
     is_24h = conditions.get("is_24h", False)
     if detail:
@@ -469,8 +448,9 @@ def build_shop_record(poi: dict, pref_code: str, price: int | None, failure_reas
         "scraped_at":     datetime.now().isoformat(),
     }
 
+
 # ============================================================
-# リトライ処理（18時実行 --mode=retry でも単独で呼ばれる）
+# リトライ処理
 # ============================================================
 
 def _update_shop_price(store_key: str, price: int):
@@ -488,12 +468,100 @@ def _update_shop_price(store_key: str, price: int):
             break
     out_path.write_text(json.dumps(shops, ensure_ascii=False, indent=2))
 
+
+# ============================================================
+# サマリー生成
+# ============================================================
+
+def generate_summary():
+    """全shops_*.jsonからall_summary.jsonを生成する。"""
+    all_shops = []
+    for p in sorted(DATA_DIR.glob("shops_??.json")):
+        try:
+            shops = json.loads(p.read_text())
+            for s in shops:
+                all_shops.append({
+                    "id":              s["id"],
+                    "name":            s["name"],
+                    "coords":          s["coords"],
+                    "prefecture_code": s["prefecture_code"],
+                    "price_tier":      s.get("price_tier"),
+                    "options":         s.get("options", {}),
+                    "scraped_at":      s.get("scraped_at"),
+                })
+        except Exception as e:
+            log.warning(f"summary生成エラー {p}: {e}")
+    out = DATA_DIR / "all_summary.json"
+    out.write_text(json.dumps(all_shops, ensure_ascii=False))
+    log.info(f"all_summary.json 生成完了: {len(all_shops)}件")
+
+
+# ============================================================
+# 差分生成
+# ============================================================
+
+def generate_diff() -> list:
+    """今回のshops_*.jsonとbackupを比較して差分リストを返す。バックアップも更新する。"""
+    diffs = []
+
+    for p in sorted(DATA_DIR.glob("shops_??.json")):
+        backup_path = BACKUP_DIR / p.name
+        try:
+            current_shops = {s["id"]: s for s in json.loads(p.read_text())}
+        except Exception as e:
+            log.warning(f"diff読み込みエラー {p}: {e}")
+            continue
+
+        if not backup_path.exists():
+            # 初回はバックアップだけ作って差分なし
+            backup_path.write_text(json.dumps(list(current_shops.values()), ensure_ascii=False))
+            log.info(f"初回バックアップ作成: {backup_path.name}")
+            continue
+
+        try:
+            prev_shops = {s["id"]: s for s in json.loads(backup_path.read_text())}
+        except Exception as e:
+            log.warning(f"backup読み込みエラー {backup_path}: {e}")
+            prev_shops = {}
+
+        all_ids = set(current_shops) | set(prev_shops)
+        for sid in all_ids:
+            cur = current_shops.get(sid)
+            prv = prev_shops.get(sid)
+            if cur and not prv:
+                diffs.append({"type": "new_open", "name": cur["name"], "address": cur.get("address", "")})
+            elif prv and not cur:
+                diffs.append({"type": "closed", "name": prv["name"], "address": prv.get("address", "")})
+            elif cur and prv:
+                ct = cur.get("price_tier")
+                pt = prv.get("price_tier")
+                if ct != pt and ct and pt:
+                    diffs.append({
+                        "type":      "price_change",
+                        "name":      cur["name"],
+                        "old_tier":  pt,
+                        "new_tier":  ct,
+                        "old_price": TIER_PRICES.get(pt, "?"),
+                        "new_price": TIER_PRICES.get(ct, "?"),
+                    })
+                for opt in ("drive_thru", "mccafe", "mobile_order"):
+                    co = cur.get("options", {}).get(opt)
+                    po = prv.get("options", {}).get(opt)
+                    if co != po:
+                        diffs.append({"type": "facility_change", "name": cur["name"], "item": opt, "new": co})
+
+        # バックアップ更新
+        backup_path.write_text(json.dumps(list(current_shops.values()), ensure_ascii=False))
+
+    log.info(f"差分検出: {len(diffs)}件")
+    return diffs
+
+
 # ============================================================
 # 県スクレイプ処理
 # ============================================================
 
 def scrape_prefecture(pref_code: str, group_cache: dict) -> bool:
-    """POI取得 → store.json（営業時間・priceTier）+ menu.json（価格）の3ステップ構成。"""
     config = PREFECTURE_CONFIG[pref_code]
     name   = config["name"]
     log.info(f"===== {pref_code}: {name} 開始 =====")
@@ -526,11 +594,9 @@ def scrape_prefecture(pref_code: str, group_cache: dict) -> bool:
         if not group:
             log.warning(f"    グループ未特定: {store_key} → build_group_cache.py を実行してください")
             no_group_cnt += 1
-            # グループ不明でも既存データがあれば保持
             shops_map[store_key] = existing.get(store_key) or build_shop_record(poi, pref_code, None, "no_group", None)
             continue
 
-        # 永続スキップ（not_supported / no_bigmac）
         cached = existing.get(store_key, {})
         status = cached.get("price_fetch_status", "")
         if status in ("not_supported", "no_bigmac"):
@@ -539,11 +605,9 @@ def scrape_prefecture(pref_code: str, group_cache: dict) -> bool:
             skip_cnt += 1
             continue
 
-        # Step1: store.json から営業時間・priceTier取得
         detail = fetch_store_detail(store_key, group)
         time.sleep(random.uniform(1.0, 2.0))
 
-        # Step2: menu.json からビッグマック価格取得
         price, reason = fetch_bigmac_price(store_key, group)
         time.sleep(random.uniform(1.0, 2.0))
 
@@ -561,6 +625,11 @@ def scrape_prefecture(pref_code: str, group_cache: dict) -> bool:
     log.info(f"{name}: {len(shops)}件保存（取得{success_cnt} スキップ{skip_cnt} グループ未特定{no_group_cnt}）")
     return True
 
+
+# ============================================================
+# メイン
+# ============================================================
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -576,13 +645,16 @@ def main():
     today = datetime.now().strftime("%Y-%m-%d")
 
     if args.mode == "retry":
-        # POIのみ構成ではリトライ不要。差分確認とサマリー更新のみ。
         log.info("===== モード: 差分確認のみ =====")
-        diffs = generate_diff()
-        generate_summary()
-        if diffs:
-            notify_diff(diffs)
-        notify_log(f"🔄 **差分確認完了** {today} 差分: {len(diffs)}件")
+        try:
+            diffs = generate_diff()
+            generate_summary()
+            if diffs:
+                notify_diff(diffs)
+            notify_log(f"🔄 **差分確認完了** {today} 差分: {len(diffs)}件")
+        except Exception as e:
+            notify_error("差分確認モードでエラー発生", e)
+            raise
         return
 
     # --- フルモード ---
@@ -604,14 +676,17 @@ def main():
             log.info(f"次の県まで{wait:.0f}秒待機...")
             time.sleep(wait)
 
-    diffs = generate_diff()
-    generate_summary()
+    try:
+        diffs = generate_diff()
+        generate_summary()
+        if diffs:
+            notify_diff(diffs)
+        completed_names = [PREFECTURE_CONFIG[c]["name"] for c in targets if c in state.get("completed", [])]
+        notify_log("✅ **本日の処理完了** " + today + " 処理県: " + ", ".join(completed_names) + " 差分: " + str(len(diffs)) + "件")
+    except Exception as e:
+        notify_error("サマリー/diff生成でエラー発生", e)
+        raise
 
-    if diffs:
-        notify_diff(diffs)
-
-    completed_names = [PREFECTURE_CONFIG[c]["name"] for c in targets if c in state.get("completed", [])]
-    notify_log("✅ **本日の処理完了** " + today + " 処理県: " + ", ".join(completed_names) + " 差分: " + str(len(diffs)) + "件")
     log.info("本日分完了。")
 
 
