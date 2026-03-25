@@ -324,12 +324,16 @@ def determine_price_tier(price: int | None) -> str | None:
     """価格（円）から価格帯を判定する。"""
     if price is None:
         return None
-    tiers = {500: "standard", 530: "semi_urban", 560: "urban", 590: "special"}
-    tier = tiers.get(price)
-    if tier is None:
-        log.warning(f"    未知の価格帯: {price}円 → 価格改定の可能性あり")
-        return f"special_{price}"
-    return tier
+    if price <= 500:
+        return "standard"
+    elif price <= 520:
+        return "semi_urban_b"
+    elif price <= 530:
+        return "semi_urban_a"
+    elif price <= 550:
+        return "urban_b"
+    else:
+        return "urban_a"
 
 
 def fetch_store_detail(store_key: str, group: str) -> dict | None:
