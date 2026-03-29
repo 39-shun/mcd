@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "30005",
+    "internal_id": 373594525,
+    "name": "２４号岩出店",
+    "coords": [
+      34.260529440027966,
+      135.3123295684084
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県岩出市備前６１－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:01.668214"
+  },
+  {
+    "id": "30006",
+    "internal_id": 373594526,
+    "name": "４２号田辺バイパス店",
+    "coords": [
+      33.74461350901439,
+      135.37540336700374
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県田辺市稲成町新江原３１５０Ｅ館",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:04.268087"
+  },
+  {
+    "id": "30507",
+    "internal_id": 373594533,
+    "name": "田辺パビリオンシティ店",
+    "coords": [
+      33.74402166882715,
+      135.37708324001215
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県田辺市稲成町新江原３１６５",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:08.012377"
+  },
+  {
+    "id": "30508",
+    "internal_id": 373594534,
+    "name": "和歌山宮街道店",
+    "coords": [
+      34.23017239531414,
+      135.2053024359485
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市秋月２８５－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:11.369437"
+  },
+  {
+    "id": "30511",
+    "internal_id": 373594537,
+    "name": "貴志川オークワ店",
+    "coords": [
+      34.21684139371731,
+      135.31518242344433
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県紀の川市貴志川町神戸２０４－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:14.531195"
+  },
+  {
+    "id": "30512",
+    "internal_id": 373594538,
+    "name": "２４号四箇郷店",
+    "coords": [
+      34.24466746626101,
+      135.2073203948666
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市加納３１９－７",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:16.963936"
+  },
+  {
+    "id": "30515",
+    "internal_id": 373594541,
+    "name": "島橋店",
+    "coords": [
+      34.24175042110019,
+      135.1513976121426
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市狐島２４３－１９",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:19.673939"
+  },
+  {
+    "id": "30517",
+    "internal_id": 373594543,
+    "name": "２４号粉河店",
+    "coords": [
+      34.26892951859534,
+      135.40641050538417
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県紀の川市粉河７９８－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:22.659851"
+  },
+  {
+    "id": "30518",
+    "internal_id": 373594544,
+    "name": "４２号御坊店",
+    "coords": [
+      33.89764649626512,
+      135.14971337808234
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県御坊市湯川町財部６３１－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:26.305731"
+  },
+  {
+    "id": "30521",
+    "internal_id": 373594546,
+    "name": "次郎丸店",
+    "coords": [
+      34.2548583790526,
+      135.151328577639
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市次郎丸６０－３",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:28.981046"
+  },
+  {
+    "id": "30523",
+    "internal_id": 373594548,
+    "name": "紀三井寺店",
+    "coords": [
+      34.197154573272975,
+      135.18544747817933
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市小雑賀７６２－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:32.551127"
+  },
+  {
+    "id": "30525",
+    "internal_id": 373594550,
+    "name": "大浦街道店",
+    "coords": [
+      34.21532943902447,
+      135.15991356422296
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市砂山南４－２－１４",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:35.833308"
+  },
+  {
+    "id": "30527",
+    "internal_id": 373594552,
+    "name": "４２号海南店",
+    "coords": [
+      34.158446536758035,
+      135.2014423435521
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県海南市船尾２３８－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:39.281806"
+  },
+  {
+    "id": "30529",
+    "internal_id": 373594554,
+    "name": "湯浅ユピア店",
+    "coords": [
+      34.0412275158175,
+      135.18693548512815
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県有田郡湯浅町大字湯浅１８５２－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:42.712797"
+  },
+  {
+    "id": "30531",
+    "internal_id": 373594556,
+    "name": "２４号川辺店",
+    "coords": [
+      34.26235460378783,
+      135.26746260244795
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市里７－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:45.321716"
+  },
+  {
+    "id": "30532",
+    "internal_id": 373594557,
+    "name": "４２号有田店",
+    "coords": [
+      34.079982499065856,
+      135.1215393899584
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県有田市宮崎町１７－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:48.682111"
+  },
+  {
+    "id": "30533",
+    "internal_id": 373594558,
+    "name": "イオンモール和歌山店",
+    "coords": [
+      34.274539398179975,
+      135.1476054809471
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市ふじと台２３",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:51.617215"
+  },
+  {
+    "id": "30534",
+    "internal_id": 373594559,
+    "name": "和歌山駅前店",
+    "coords": [
+      34.2291054892349,
+      135.18937442147273
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市田中町４―５３",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:11:55.386451"
+  },
+  {
+    "id": "30535",
+    "internal_id": 373594560,
+    "name": "モンティグレ和歌山店",
+    "coords": [
+      34.23017944181323,
+      135.17299443220261
+    ],
+    "prefecture_code": 30,
+    "address": "和歌山県和歌山市七番丁２６ー１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:11:58.429339"
+  }
+]

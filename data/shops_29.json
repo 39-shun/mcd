@@ -1,0 +1,2306 @@
+[
+  {
+    "id": "29001",
+    "internal_id": 373594444,
+    "name": "奈良店",
+    "coords": [
+      34.68300648624113,
+      135.82867547719718
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市東向南町２１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:04.039534"
+  },
+  {
+    "id": "29004",
+    "internal_id": 373594447,
+    "name": "大和新庄店",
+    "coords": [
+      34.49606245153816,
+      135.734760321274
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県葛城市東室１４９－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:06.945053"
+  },
+  {
+    "id": "29005",
+    "internal_id": 373594448,
+    "name": "阪奈宝来店",
+    "coords": [
+      34.68433443857687,
+      135.77113435786458
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市宝来４－１７－３",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:08:09.736364"
+  },
+  {
+    "id": "29006",
+    "internal_id": 373594449,
+    "name": "田原本店",
+    "coords": [
+      34.54890041912623,
+      135.79753443496134
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県磯城郡田原本町大字阪手６２６－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:08:12.539902"
+  },
+  {
+    "id": "29007",
+    "internal_id": 373594450,
+    "name": "奈良北店",
+    "coords": [
+      34.68814128360108,
+      135.8092564457762
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市法華寺町７３－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:16.180930"
+  },
+  {
+    "id": "29010",
+    "internal_id": 373594453,
+    "name": "大和郡山インター店",
+    "coords": [
+      34.61997134648275,
+      135.80175942745817
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県大和郡山市横田町７５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:08:19.486513"
+  },
+  {
+    "id": "29011",
+    "internal_id": 373594454,
+    "name": "２４号橿原店",
+    "coords": [
+      34.507128339424554,
+      135.7672554407615
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県橿原市曲川町７－１－２７",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:22.568144"
+  },
+  {
+    "id": "29014",
+    "internal_id": 373594457,
+    "name": "１６８香芝店",
+    "coords": [
+      34.55540937223268,
+      135.70039743085667
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県香芝市上中７７７－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:25.778820"
+  },
+  {
+    "id": "29504",
+    "internal_id": 373594463,
+    "name": "エコールマミ店",
+    "coords": [
+      34.545339404559925,
+      135.7244373354262
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県香芝市真美ヶ丘６－１０南館２Ｆ",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:29.504646"
+  },
+  {
+    "id": "29508",
+    "internal_id": 373594467,
+    "name": "榛原サンクシティ店",
+    "coords": [
+      34.526678444477994,
+      135.95060932341502
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県宇陀市榛原区下井足４９－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:32.655663"
+  },
+  {
+    "id": "29513",
+    "internal_id": 373594471,
+    "name": "１６９橿原店",
+    "coords": [
+      34.487158485522656,
+      135.79578529057144
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県橿原市久米町７１２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:08:36.628969"
+  },
+  {
+    "id": "29521",
+    "internal_id": 373594479,
+    "name": "イオン桜井店",
+    "coords": [
+      34.5213275220861,
+      135.8372482895862
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県桜井市大字上之庄２７８－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:30"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:30"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:30"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:08:39.386286"
+  },
+  {
+    "id": "29522",
+    "internal_id": 373594480,
+    "name": "法隆寺インター店",
+    "coords": [
+      34.587158392814175,
+      135.74159247301753
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県北葛城郡河合町穴闇１８４－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:42.411734"
+  },
+  {
+    "id": "29527",
+    "internal_id": 373594485,
+    "name": "学園前イズミヤ店",
+    "coords": [
+      34.695311397737576,
+      135.74180349663837
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市学園中４－５３９－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "19:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "19:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:08:45.723791"
+  },
+  {
+    "id": "29530",
+    "internal_id": 373594488,
+    "name": "奈良紀寺店",
+    "coords": [
+      34.66936647359074,
+      135.83320138070323
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市紀寺町３６９－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:49.432309"
+  },
+  {
+    "id": "29532",
+    "internal_id": 373594490,
+    "name": "五位堂駅前店",
+    "coords": [
+      34.53538041096252,
+      135.71913758035257
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県香芝市瓦口２３０３",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:52.663576"
+  },
+  {
+    "id": "29536",
+    "internal_id": 373594494,
+    "name": "２５号大和郡山店",
+    "coords": [
+      34.619528492892236,
+      135.77246033905965
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県大和郡山市小林町５６０－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:55.619490"
+  },
+  {
+    "id": "29537",
+    "internal_id": 373594495,
+    "name": "近鉄学園前店",
+    "coords": [
+      34.69720026817812,
+      135.75022852748506
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市学園北１－１－１ル・シエル学園前２Ｆ",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:08:59.095236"
+  },
+  {
+    "id": "29538",
+    "internal_id": 373594496,
+    "name": "近鉄東生駒駅前店",
+    "coords": [
+      34.69176827083898,
+      135.7094925594691
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県生駒市東生駒１－５",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:30"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:30"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:30"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:09:02.564698"
+  },
+  {
+    "id": "29539",
+    "internal_id": 373594497,
+    "name": "天理ダイキ店",
+    "coords": [
+      34.58569441345758,
+      135.83810130564027
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県天理市三昧田町１７－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:06.227732"
+  },
+  {
+    "id": "29540",
+    "internal_id": 373594498,
+    "name": "１６９天理店",
+    "coords": [
+      34.60778932876734,
+      135.83470446132833
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県天理市別所町１３１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:09.917846"
+  },
+  {
+    "id": "29545",
+    "internal_id": 373594503,
+    "name": "１６５桜井店",
+    "coords": [
+      34.508564255843964,
+      135.8376853509523
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県桜井市阿部４２５－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:14.059705"
+  },
+  {
+    "id": "29547",
+    "internal_id": 373594505,
+    "name": "王寺りーべる店",
+    "coords": [
+      34.597845476364654,
+      135.70407233831168
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県北葛城郡王寺町久度２－２－１東館Ｂ１Ｆ",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:30",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:30",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:30",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:09:17.090427"
+  },
+  {
+    "id": "29548",
+    "internal_id": 373594506,
+    "name": "橿原葛本町店",
+    "coords": [
+      34.52116634962989,
+      135.79794533944334
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県橿原市葛本町７０６－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "05:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "05:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:20.488564"
+  },
+  {
+    "id": "29549",
+    "internal_id": 373594507,
+    "name": "大和中央道郡山店",
+    "coords": [
+      34.644146417863034,
+      135.76754048714056
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県大和郡山市外川町７９－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:23.604585"
+  },
+  {
+    "id": "29550",
+    "internal_id": 373594508,
+    "name": "イオンモール奈良登美ヶ丘店",
+    "coords": [
+      34.726184494955604,
+      135.75108635125636
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県生駒市鹿畑町３０２７",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:27.193782"
+  },
+  {
+    "id": "29551",
+    "internal_id": 373594509,
+    "name": "２５号斑鳩店",
+    "coords": [
+      34.60209629021726,
+      135.7120534399626
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県生駒郡斑鳩町稲葉西２－９－６",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:09:30.071976"
+  },
+  {
+    "id": "29552",
+    "internal_id": 373594510,
+    "name": "白庭台店",
+    "coords": [
+      34.72658224776409,
+      135.71617134214108
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県生駒市上町台１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:33.903280"
+  },
+  {
+    "id": "29553",
+    "internal_id": 373594511,
+    "name": "南生駒店",
+    "coords": [
+      34.66944242166815,
+      135.7072535160231
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県生駒市有里町１０７－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:09:36.977913"
+  },
+  {
+    "id": "29554",
+    "internal_id": 373594512,
+    "name": "イオンモール大和郡山店",
+    "coords": [
+      34.651244472278655,
+      135.80210138728316
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県大和郡山市下三橋町７４１－３４６",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:40.890622"
+  },
+  {
+    "id": "29555",
+    "internal_id": 373594513,
+    "name": "中和幹線大和高田店",
+    "coords": [
+      34.52992332963086,
+      135.74646731974354
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県大和高田市大字池尻１８１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:43.888496"
+  },
+  {
+    "id": "29556",
+    "internal_id": 373594514,
+    "name": "２４号五條店",
+    "coords": [
+      34.355027434735895,
+      135.7041744041322
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県五條市今井２－３６２－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:09:47.730679"
+  },
+  {
+    "id": "29557",
+    "internal_id": 373594515,
+    "name": "イオンモール橿原店",
+    "coords": [
+      34.50537649919699,
+      135.76318835541554
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県橿原市曲川町７－２０－１イオンモール橿原２Ｆフードコート内",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:09:50.727530"
+  },
+  {
+    "id": "29558",
+    "internal_id": 373594516,
+    "name": "ならファミリー店",
+    "coords": [
+      34.69433530371865,
+      135.78548248220497
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市西大寺東町２－４－１ならフアミリー地下１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:09:53.699107"
+  },
+  {
+    "id": "29559",
+    "internal_id": 373594517,
+    "name": "奈良上牧店",
+    "coords": [
+      34.5678973106633,
+      135.7205035822723
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県北葛城郡上牧町滝川台１－３１３２－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-25T14:09:57.098544"
+  },
+  {
+    "id": "29561",
+    "internal_id": 373594518,
+    "name": "奈良富雄店",
+    "coords": [
+      34.68827150690416,
+      135.73600257826413
+    ],
+    "prefecture_code": 29,
+    "address": "奈良県奈良市三碓２ー５ー４０",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-25T14:10:00.523994"
+  }
+]
