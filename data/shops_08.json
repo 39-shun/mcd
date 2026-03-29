@@ -1,0 +1,4866 @@
+[
+  {
+    "id": "08012",
+    "internal_id": 374158696,
+    "name": "真鍋新町店",
+    "coords": [
+      36.08944173431136,
+      140.20767374143787
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県土浦市真鍋新町２０－３６",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "05:00",
+        "close": "02:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "02:00"
+      },
+      "holiday": {
+        "open": "05:00",
+        "close": "02:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:05.562279"
+  },
+  {
+    "id": "08014",
+    "internal_id": 374158698,
+    "name": "つくば学園店",
+    "coords": [
+      36.076377592889166,
+      140.1036339564786
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくば市小野崎字千駄苅２９３－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:08.486909"
+  },
+  {
+    "id": "08016",
+    "internal_id": 374158699,
+    "name": "牛久店",
+    "coords": [
+      35.991949641469155,
+      140.14516391316087
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県牛久市猪子町８０６－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:11.089260"
+  },
+  {
+    "id": "08017",
+    "internal_id": 374158700,
+    "name": "古河店",
+    "coords": [
+      36.20486377437752,
+      139.74144287005234
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県古河市大字西牛ケ谷２６０",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:14.755393"
+  },
+  {
+    "id": "08018",
+    "internal_id": 374158701,
+    "name": "日立金沢店",
+    "coords": [
+      36.540411341539205,
+      140.6217889828994
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県日立市金沢町４－１－１６",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:18.061281"
+  },
+  {
+    "id": "08020",
+    "internal_id": 374158703,
+    "name": "那珂町店",
+    "coords": [
+      36.44816345146491,
+      140.50192977857517
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県那珂市竹ノ内３－６－５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:21.141863"
+  },
+  {
+    "id": "08026",
+    "internal_id": 374158709,
+    "name": "守谷ジョイフル本田店",
+    "coords": [
+      35.93850472918798,
+      139.9877119817866
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県守谷市松ヶ丘３－８",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:24.424802"
+  },
+  {
+    "id": "08027",
+    "internal_id": 374158710,
+    "name": "５０号下館店",
+    "coords": [
+      36.295160607794585,
+      139.9403029679788
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県筑西市玉戸１０１８",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:27.468222"
+  },
+  {
+    "id": "08028",
+    "internal_id": 374158711,
+    "name": "５０号水戸赤塚店",
+    "coords": [
+      36.38695940204592,
+      140.41653991425457
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市赤塚２－２００５－１０",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:29.869024"
+  },
+  {
+    "id": "08033",
+    "internal_id": 374158715,
+    "name": "水海道バイパス店",
+    "coords": [
+      36.01824650866475,
+      139.99598189655123
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県常総市水海道渕頭町４５６６",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:33.244863"
+  },
+  {
+    "id": "08034",
+    "internal_id": 374158716,
+    "name": "５１号潮来店",
+    "coords": [
+      35.95099857368523,
+      140.5671248872821
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県潮来市須賀２８３７－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:36.375173"
+  },
+  {
+    "id": "08035",
+    "internal_id": 374158717,
+    "name": "５０号岩瀬店",
+    "coords": [
+      36.36504554284815,
+      140.10570481642517
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県桜川市御領１－６５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:38.781250"
+  },
+  {
+    "id": "08507",
+    "internal_id": 374158723,
+    "name": "イオン東海店",
+    "coords": [
+      36.463641560489116,
+      140.56689193093902
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県那珂郡東海村舟石川駅東４－１－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:42.288278"
+  },
+  {
+    "id": "08520",
+    "internal_id": 374158736,
+    "name": "那珂町ＤＣＭ店",
+    "coords": [
+      36.42836939102132,
+      140.51509200152364
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県那珂市菅谷１６１４",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:30",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:30",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:30",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:44.947416"
+  },
+  {
+    "id": "08526",
+    "internal_id": 374158741,
+    "name": "５１号大洗インター店",
+    "coords": [
+      36.33312040464912,
+      140.55380081202182
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市塩崎町８７６－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:47.610651"
+  },
+  {
+    "id": "08527",
+    "internal_id": 374158742,
+    "name": "ひたちなか昭和通り店",
+    "coords": [
+      36.395484564386734,
+      140.5373887267936
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県ひたちなか市東石川字宮下１０１５－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:50.854320"
+  },
+  {
+    "id": "08529",
+    "internal_id": 374158744,
+    "name": "牛久カスミ店",
+    "coords": [
+      35.96865550074658,
+      140.1516637654666
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県牛久市神谷６－１－３",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:30",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:30",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:00:54.084931"
+  },
+  {
+    "id": "08537",
+    "internal_id": 374158752,
+    "name": "５０号笠間店",
+    "coords": [
+      36.39362351023061,
+      140.25060986943592
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県笠間市赤坂４－４",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:00:57.602249"
+  },
+  {
+    "id": "08540",
+    "internal_id": 374158755,
+    "name": "竜ヶ崎ニュータウン店",
+    "coords": [
+      35.93100872488393,
+      140.17546496221271
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県龍ケ崎市中根台４－９－２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:00.914221"
+  },
+  {
+    "id": "08541",
+    "internal_id": 374158756,
+    "name": "土浦田中店",
+    "coords": [
+      36.08435571896632,
+      140.19016182859772
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県土浦市田中１－１３１２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:03.435085"
+  },
+  {
+    "id": "08549",
+    "internal_id": 374158763,
+    "name": "６号線千代田町店",
+    "coords": [
+      36.13139749494931,
+      140.22588600752786
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県かすみがうら市上稲吉１９４３－１４",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:06.640837"
+  },
+  {
+    "id": "08550",
+    "internal_id": 374158764,
+    "name": "４０８つくば大曽根店",
+    "coords": [
+      36.13790950291806,
+      140.08228378130073
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくば市筑穂１－１－２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:09.506459"
+  },
+  {
+    "id": "08556",
+    "internal_id": 374158770,
+    "name": "５０号結城バイパス店",
+    "coords": [
+      36.28688769171868,
+      139.87020402394714
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県結城市下り松６－１－２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:12.964199"
+  },
+  {
+    "id": "08564",
+    "internal_id": 374158778,
+    "name": "高萩モールベイシア店",
+    "coords": [
+      36.72849542417266,
+      140.7157017735825
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県高萩市下手綱１０６９",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:16.913663"
+  },
+  {
+    "id": "08568",
+    "internal_id": 374158782,
+    "name": "１２５三和店",
+    "coords": [
+      36.20114057770739,
+      139.81293302374573
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県古河市諸川１２４１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:19.636078"
+  },
+  {
+    "id": "08570",
+    "internal_id": 374158784,
+    "name": "１２５阿見店",
+    "coords": [
+      36.041292497037745,
+      140.20954585507073
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県稲敷郡阿見町中郷２－３０－３",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:23.636173"
+  },
+  {
+    "id": "08576",
+    "internal_id": 374158790,
+    "name": "１１８水戸中河内店",
+    "coords": [
+      36.40521856686637,
+      140.46101480347008
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市中河内町２６２３－２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:26.249264"
+  },
+  {
+    "id": "08577",
+    "internal_id": 374158791,
+    "name": "６号線水戸住吉店",
+    "coords": [
+      36.33581152058878,
+      140.47471574476126
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市住吉町９６－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:29.213338"
+  },
+  {
+    "id": "08578",
+    "internal_id": 374158792,
+    "name": "西代パルナ店",
+    "coords": [
+      35.91823452839134,
+      140.48792376846396
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県稲敷市西代１４９５",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:32.039791"
+  },
+  {
+    "id": "08579",
+    "internal_id": 374158793,
+    "name": "２９４新守谷店",
+    "coords": [
+      35.9656635378938,
+      139.98507692666948
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県守谷市御所ケ丘１－２－２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:34.752981"
+  },
+  {
+    "id": "08580",
+    "internal_id": 374158794,
+    "name": "２４５ひたちなか店",
+    "coords": [
+      36.401354552824046,
+      140.5808758958897
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県ひたちなか市馬渡字砂久保５４７－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:38.307774"
+  },
+  {
+    "id": "08583",
+    "internal_id": 374158797,
+    "name": "５０号水戸大塚店",
+    "coords": [
+      36.38621856237955,
+      140.393193875711
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市大塚町１５３９－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:41.335898"
+  },
+  {
+    "id": "08584",
+    "internal_id": 374158798,
+    "name": "総和とりせん店",
+    "coords": [
+      36.16741374754297,
+      139.76838405388415
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県古河市下大野２００８－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:44.884129"
+  },
+  {
+    "id": "08586",
+    "internal_id": 374158800,
+    "name": "２９４石下店",
+    "coords": [
+      36.109339755542706,
+      139.983127016328
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県常総市大字新石下１６０３－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:48.673439"
+  },
+  {
+    "id": "08587",
+    "internal_id": 374158801,
+    "name": "佐貫駅前店",
+    "coords": [
+      35.93003671867961,
+      140.13851285828892
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県龍ケ崎市佐貫町６４６",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:52.007395"
+  },
+  {
+    "id": "08591",
+    "internal_id": 374158805,
+    "name": "岩井店",
+    "coords": [
+      36.05072661729085,
+      139.88940991292827
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県坂東市岩井３４５２－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:01:55.229048"
+  },
+  {
+    "id": "08596",
+    "internal_id": 374158810,
+    "name": "２９４下館一本松店",
+    "coords": [
+      36.295349734816085,
+      139.97018290823905
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県筑西市一本松１５３３－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:01:58.000111"
+  },
+  {
+    "id": "08597",
+    "internal_id": 374158811,
+    "name": "１２４波崎店",
+    "coords": [
+      35.74886772454029,
+      140.82241067426054
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県神栖市波崎８５１５－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:00.835285"
+  },
+  {
+    "id": "08598",
+    "internal_id": 374158812,
+    "name": "江戸崎パンプ店",
+    "coords": [
+      35.95923854607671,
+      140.31613882262877
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県稲敷市江戸崎甲４８３６",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:04.557315"
+  },
+  {
+    "id": "08599",
+    "internal_id": 374158813,
+    "name": "土浦天川店",
+    "coords": [
+      36.06569956549648,
+      140.18269490231233
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県土浦市中高津３－５－９",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:07.758756"
+  },
+  {
+    "id": "08600",
+    "internal_id": 374158814,
+    "name": "６号線藤代店",
+    "coords": [
+      35.91943876844233,
+      140.10864082760523
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県取手市谷中２０８－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "05:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "05:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:10.819252"
+  },
+  {
+    "id": "08603",
+    "internal_id": 374158817,
+    "name": "日立小木津店",
+    "coords": [
+      36.63022651499413,
+      140.68402177446202
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県日立市相田町１－８－５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:02:14.158595"
+  },
+  {
+    "id": "08604",
+    "internal_id": 374158818,
+    "name": "日立豊浦カスミ店",
+    "coords": [
+      36.665778517661444,
+      140.69117796437897
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県日立市川尻町５－３－１７",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:17.823144"
+  },
+  {
+    "id": "08606",
+    "internal_id": 374158820,
+    "name": "日立カインズホーム店",
+    "coords": [
+      36.49151944266341,
+      140.60417396169294
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県日立市留町字前川１２７０－２カインズホーム日立店内",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:02:21.554601"
+  },
+  {
+    "id": "08611",
+    "internal_id": 374158825,
+    "name": "千代田モールヨークベニマル店",
+    "coords": [
+      36.1264537295901,
+      140.230298893767
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県かすみがうら市下稲吉逆西２６３３－７",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:25.418715"
+  },
+  {
+    "id": "08612",
+    "internal_id": 374158826,
+    "name": "坂東ヨークタウン店",
+    "coords": [
+      36.03835556387882,
+      139.8911938798167
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県坂東市辺田１１０４－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:28.779214"
+  },
+  {
+    "id": "08613",
+    "internal_id": 374158827,
+    "name": "イオンモール水戸内原店",
+    "coords": [
+      36.37539552123427,
+      140.35943192769622
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市内原２－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:31.955048"
+  },
+  {
+    "id": "08615",
+    "internal_id": 374158829,
+    "name": "北茨城中郷店",
+    "coords": [
+      36.7814563398527,
+      140.73486284170693
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県北茨城市中郷町上桜井２２５９",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:34.388983"
+  },
+  {
+    "id": "08616",
+    "internal_id": 374158830,
+    "name": "ひたちなか高場店",
+    "coords": [
+      36.42072563994877,
+      140.53891696874632
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県ひたちなか市高場１１３９－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:02:37.181746"
+  },
+  {
+    "id": "08617",
+    "internal_id": 374158831,
+    "name": "イオンタウン水戸南店",
+    "coords": [
+      36.31068650175018,
+      140.44162294980183
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県東茨城郡茨城町長岡３４８０―１０１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:39.569185"
+  },
+  {
+    "id": "08618",
+    "internal_id": 374158832,
+    "name": "イオンタウン守谷店",
+    "coords": [
+      35.9451476911386,
+      139.9914150062014
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県守谷市百合ケ丘３－２４９－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:43.237715"
+  },
+  {
+    "id": "08619",
+    "internal_id": 374158833,
+    "name": "１１８常陸大宮店",
+    "coords": [
+      36.540718472095236,
+      140.4102108660368
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県常陸大宮市石沢１８６３－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:02:46.352424"
+  },
+  {
+    "id": "08620",
+    "internal_id": 374158834,
+    "name": "イーアスつくば店",
+    "coords": [
+      36.08611652171954,
+      140.08429880914397
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくば市研究学園５－１９",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:49.783347"
+  },
+  {
+    "id": "08621",
+    "internal_id": 374158835,
+    "name": "イオンモール土浦店",
+    "coords": [
+      36.08034174768502,
+      140.1807219634642
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県土浦市上高津３６７イオン土浦ＳＣ内３階フードコート",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:02:52.774008"
+  },
+  {
+    "id": "08622",
+    "internal_id": 374158836,
+    "name": "５０号水戸大工町店",
+    "coords": [
+      36.38081565803476,
+      140.4568659125555
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市大工町２－６－３３",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:02:55.929363"
+  },
+  {
+    "id": "08623",
+    "internal_id": 374158837,
+    "name": "ＪＲ水戸駅店",
+    "coords": [
+      36.370715660115,
+      140.4758588929458
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市宮町１－１－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:02:58.618729"
+  },
+  {
+    "id": "08624",
+    "internal_id": 374158838,
+    "name": "荒川沖東店",
+    "coords": [
+      36.026744724074774,
+      140.16991982033048
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県土浦市荒川沖東２－１８－５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:01.142156"
+  },
+  {
+    "id": "08625",
+    "internal_id": 374158839,
+    "name": "境町店",
+    "coords": [
+      36.122727750987465,
+      139.8011780911106
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県猿島郡境町大字長井戸字南前２５４",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:04.751104"
+  },
+  {
+    "id": "08626",
+    "internal_id": 374158840,
+    "name": "つくば研究学園店",
+    "coords": [
+      36.085534665690105,
+      140.07493185210788
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくば市研究学園４－１－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:08.306511"
+  },
+  {
+    "id": "08627",
+    "internal_id": 374158841,
+    "name": "４号線古河店",
+    "coords": [
+      36.18806169912378,
+      139.717546994417
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県古河市古河８０２－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:11.006183"
+  },
+  {
+    "id": "08628",
+    "internal_id": 374158842,
+    "name": "龍ヶ崎店",
+    "coords": [
+      35.909991612685204,
+      140.18437173766648
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県龍ケ崎市寺後３５７２－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:13.595825"
+  },
+  {
+    "id": "08629",
+    "internal_id": 374158843,
+    "name": "１２５下妻店",
+    "coords": [
+      36.180203563675654,
+      139.96849588916035
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県下妻市大字下妻戊１０７",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:16.655474"
+  },
+  {
+    "id": "08630",
+    "internal_id": 374158844,
+    "name": "３５４つくば上横場店",
+    "coords": [
+      36.03958955711385,
+      140.08441988665433
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくば市上横場２１６６－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:19.061092"
+  },
+  {
+    "id": "08631",
+    "internal_id": 374158845,
+    "name": "イオンモールつくば店",
+    "coords": [
+      36.03403456501241,
+      140.13310486791664
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくば市稲岡６６－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:22.256584"
+  },
+  {
+    "id": "08632",
+    "internal_id": 374158846,
+    "name": "神栖店",
+    "coords": [
+      35.901599630939195,
+      140.63600585186936
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県神栖市筒井１６６６－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:25.738594"
+  },
+  {
+    "id": "08633",
+    "internal_id": 374158847,
+    "name": "６号線日立店",
+    "coords": [
+      36.58806439641988,
+      140.64599876772368
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県日立市鹿島町３－４－６",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:28.300119"
+  },
+  {
+    "id": "08634",
+    "internal_id": 374158848,
+    "name": "６号線ひたちなか店",
+    "coords": [
+      36.398867471082475,
+      140.5057759908175
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県ひたちなか市市毛８０５－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:31.636379"
+  },
+  {
+    "id": "08635",
+    "internal_id": 374158849,
+    "name": "鉾田店",
+    "coords": [
+      36.16699146645502,
+      140.52665789613852
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県鉾田市安房１４０８－３",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:34.931620"
+  },
+  {
+    "id": "08636",
+    "internal_id": 374158850,
+    "name": "友部店",
+    "coords": [
+      36.32645846046421,
+      140.32561881229876
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県笠間市旭町４６３－３",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:38.311986"
+  },
+  {
+    "id": "08637",
+    "internal_id": 374158851,
+    "name": "常陸太田フォレストモール店",
+    "coords": [
+      36.54357738070548,
+      140.53245477849052
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県常陸太田市東部土地区画整理事業１街区１画地",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:40.823884"
+  },
+  {
+    "id": "08638",
+    "internal_id": 374158852,
+    "name": "水戸駅南通り店",
+    "coords": [
+      36.367233478474894,
+      140.47313093884802
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市城南１－２－２０",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:43.756115"
+  },
+  {
+    "id": "08639",
+    "internal_id": 374158853,
+    "name": "つくばみらい平店",
+    "coords": [
+      36.0032875524695,
+      140.03362597703736
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくばみらい市富士見ヶ丘１－２８－４",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:46.487265"
+  },
+  {
+    "id": "08640",
+    "internal_id": 374158854,
+    "name": "５０号バイパス水戸店",
+    "coords": [
+      36.35049549597329,
+      140.43746884390643
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県水戸市千波町２０９４－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:49.273871"
+  },
+  {
+    "id": "08641",
+    "internal_id": 374158855,
+    "name": "１２４鹿嶋店",
+    "coords": [
+      35.96107059958975,
+      140.64151763447188
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県鹿嶋市宮中３１４－４",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:51.613152"
+  },
+  {
+    "id": "08642",
+    "internal_id": 374158856,
+    "name": "石岡店",
+    "coords": [
+      36.205288682712556,
+      140.29000192354056
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県石岡市行里川２７－１１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-28T15:03:54.840275"
+  },
+  {
+    "id": "08643",
+    "internal_id": 374158857,
+    "name": "さくらの杜店",
+    "coords": [
+      36.106638661770624,
+      140.125571950054
+    ],
+    "prefecture_code": 8,
+    "address": "茨城県つくば市さくらの森２５－１０",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-28T15:03:57.979249"
+  }
+]

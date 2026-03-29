@@ -1,0 +1,3074 @@
+[
+  {
+    "id": "04002",
+    "internal_id": 373983246,
+    "name": "仙台青葉通り店",
+    "coords": [
+      38.25944317414355,
+      140.87225114597322
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市青葉区一番町２－５－１",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:08:54.835856"
+  },
+  {
+    "id": "04004",
+    "internal_id": 373983248,
+    "name": "仙台黒松店",
+    "coords": [
+      38.30960816626344,
+      140.88031725308198
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市泉区八乙女中央１－１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:08:57.984164"
+  },
+  {
+    "id": "04005",
+    "internal_id": 373983249,
+    "name": "仙台中央通り店",
+    "coords": [
+      38.261287273627296,
+      140.87724701505127
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市青葉区中央２－２－２９",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:00.722376"
+  },
+  {
+    "id": "04007",
+    "internal_id": 373983251,
+    "name": "４号線名取店",
+    "coords": [
+      38.156201100309026,
+      140.88756604692688
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県名取市飯野坂土城掘８２－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:03.678777"
+  },
+  {
+    "id": "04009",
+    "internal_id": 373983253,
+    "name": "市名坂店",
+    "coords": [
+      38.31945425196277,
+      140.88988318138604
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市泉区市名坂字東裏９７－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:06.617738"
+  },
+  {
+    "id": "04010",
+    "internal_id": 373983254,
+    "name": "泉中山店",
+    "coords": [
+      38.29707501561928,
+      140.82746826234268
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市泉区南中山１－４２－５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:10.110429"
+  },
+  {
+    "id": "04012",
+    "internal_id": 373983256,
+    "name": "４号線白石店",
+    "coords": [
+      37.99727535007861,
+      140.61248808276105
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県白石市八幡町４６９",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "08:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "08:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:13.725134"
+  },
+  {
+    "id": "04013",
+    "internal_id": 373983257,
+    "name": "４５号石巻店",
+    "coords": [
+      38.43085899493924,
+      141.26206009290757
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県石巻市門脇一番谷地４６－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:17.457303"
+  },
+  {
+    "id": "04014",
+    "internal_id": 373983258,
+    "name": "大河原店",
+    "coords": [
+      38.06144128442728,
+      140.7375090079045
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県柴田郡大河原町字新東２７－１４",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:20.669861"
+  },
+  {
+    "id": "04506",
+    "internal_id": 373983264,
+    "name": "中田ヤマザワ店",
+    "coords": [
+      38.19676504812351,
+      140.89775409925392
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市太白区中田町字千刈田１９－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:24.382394"
+  },
+  {
+    "id": "04510",
+    "internal_id": 373983268,
+    "name": "イオン仙台中山店",
+    "coords": [
+      38.29767801043135,
+      140.8277762628139
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市泉区南中山１－３５－４０イオン仙台中山店３Ｆ",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:27.617129"
+  },
+  {
+    "id": "04514",
+    "internal_id": 373983272,
+    "name": "ザ・モール仙台長町店",
+    "coords": [
+      38.22601327184142,
+      140.87649512520744
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市太白区長町７－２０－３",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:30.841439"
+  },
+  {
+    "id": "04516",
+    "internal_id": 373983274,
+    "name": "イオン古川店",
+    "coords": [
+      38.5667269433359,
+      140.97275118634673
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県大崎市古川旭２－２－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:33.600303"
+  },
+  {
+    "id": "04519",
+    "internal_id": 373983277,
+    "name": "４号線古川店",
+    "coords": [
+      38.57503798591827,
+      140.94657417709016
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県大崎市古川城西１－１１－２５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:37.340370"
+  },
+  {
+    "id": "04520",
+    "internal_id": 373983278,
+    "name": "仙台駅東口店",
+    "coords": [
+      38.26079807220993,
+      140.88363009574311
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市宮城野区榴岡２－１－２５Ｂｉｖｉ仙台駅東口１Ｆ",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:40.046868"
+  },
+  {
+    "id": "04521",
+    "internal_id": 373983279,
+    "name": "利府街道店",
+    "coords": [
+      38.33115519722645,
+      140.9778072264577
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県宮城郡利府町利府字新並松６４－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:43.148917"
+  },
+  {
+    "id": "04523",
+    "internal_id": 373983281,
+    "name": "ザ・ビッグ柴田店",
+    "coords": [
+      38.06244811059962,
+      140.7948981589485
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県柴田郡柴田町中名生字佐野３４－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:46.385275"
+  },
+  {
+    "id": "04526",
+    "internal_id": 373983284,
+    "name": "亘理コープ店",
+    "coords": [
+      38.042575293768024,
+      140.87723196039767
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県亘理郡亘理町逢隈高屋字柴北１００",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:50.271798"
+  },
+  {
+    "id": "04528",
+    "internal_id": 373983286,
+    "name": "４号線仙台松森店",
+    "coords": [
+      38.30464420732352,
+      140.91527001088932
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市泉区松森字関場３２－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:09:54.192738"
+  },
+  {
+    "id": "04531",
+    "internal_id": 373983289,
+    "name": "仙台一番町四丁目店",
+    "coords": [
+      38.26391011301926,
+      140.87071523593846
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市青葉区一番町４－４－３３－２Ｆ",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:09:56.678812"
+  },
+  {
+    "id": "04532",
+    "internal_id": 373983290,
+    "name": "大和吉岡ヨークベニマル店",
+    "coords": [
+      38.43663910946356,
+      140.89279211034744
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県黒川郡大和町吉岡東１－２－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:30",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:30",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:30",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:00.308701"
+  },
+  {
+    "id": "04533",
+    "internal_id": 373983291,
+    "name": "仙台大野田店",
+    "coords": [
+      38.21353725481678,
+      140.87792919710193
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市太白区大野田２－７－２９",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:03.591714"
+  },
+  {
+    "id": "04534",
+    "internal_id": 373983292,
+    "name": "４５号塩釜店",
+    "coords": [
+      38.33153220147081,
+      141.03810309512644
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県塩竈市杉の入３－１－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:06.619651"
+  },
+  {
+    "id": "04535",
+    "internal_id": 373983293,
+    "name": "岩沼西ヨークベニマル店",
+    "coords": [
+      38.107732188289646,
+      140.85688096559403
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県岩沼市たけくま２－３－６７",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:30",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:30",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:30",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:09.640720"
+  },
+  {
+    "id": "04536",
+    "internal_id": 373983294,
+    "name": "南吉成ヨークベニマル店",
+    "coords": [
+      38.28661118034076,
+      140.81639804830263
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市青葉区南吉成３－１－２１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:12.899385"
+  },
+  {
+    "id": "04538",
+    "internal_id": 373983296,
+    "name": "イオンモール富谷店",
+    "coords": [
+      38.364071998574076,
+      140.8753492819477
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県富谷市大清水１－３３－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:15.340896"
+  },
+  {
+    "id": "04539",
+    "internal_id": 373983297,
+    "name": "山田鈎取ヨークタウン店",
+    "coords": [
+      38.21636211639915,
+      140.83675707751075
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市太白区山田字田中前１８０",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:19.152206"
+  },
+  {
+    "id": "04541",
+    "internal_id": 373983299,
+    "name": "新田東ヨークタウン店",
+    "coords": [
+      38.27627923331508,
+      140.93701612894378
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市宮城野区新田東３－１－５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:22.549899"
+  },
+  {
+    "id": "04543",
+    "internal_id": 373983301,
+    "name": "佐沼店",
+    "coords": [
+      38.68567808438879,
+      141.18635106410477
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県登米市迫町佐沼字萩洗２－１２－１３",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:25.672044"
+  },
+  {
+    "id": "04544",
+    "internal_id": 373983302,
+    "name": "イオンモール名取店",
+    "coords": [
+      38.164144047075204,
+      140.89622214829646
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県名取市杜せきのした５丁目３番地の１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:29.019357"
+  },
+  {
+    "id": "04545",
+    "internal_id": 373983303,
+    "name": "イオンモール石巻店",
+    "coords": [
+      38.44788213119792,
+      141.2655589752997
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県石巻市茜平４－１０４",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:32.999423"
+  },
+  {
+    "id": "04546",
+    "internal_id": 373983304,
+    "name": "仙台六丁の目店",
+    "coords": [
+      38.25048710966007,
+      140.9334770939286
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市若林区六丁の目元町１６－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:36.607784"
+  },
+  {
+    "id": "04547",
+    "internal_id": 373983305,
+    "name": "仙台長町店",
+    "coords": [
+      38.22582918049525,
+      140.88786109336107
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市太白区あすと長町４－２－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:39.880102"
+  },
+  {
+    "id": "04548",
+    "internal_id": 373983306,
+    "name": "石巻蛇田店",
+    "coords": [
+      38.44673606714912,
+      141.27205319058018
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県石巻市恵み野１－２－８",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:42.216965"
+  },
+  {
+    "id": "04549",
+    "internal_id": 373983307,
+    "name": "４号線岩沼店",
+    "coords": [
+      38.12232017334589,
+      140.87410518352894
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県名取市堀内字北竹８５－５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:45.540655"
+  },
+  {
+    "id": "04550",
+    "internal_id": 373983308,
+    "name": "明石台店",
+    "coords": [
+      38.347948242354974,
+      140.89206414787495
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県富谷市明石台６－１－３６",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:10:48.430918"
+  },
+  {
+    "id": "04551",
+    "internal_id": 373983309,
+    "name": "仙台沖野店",
+    "coords": [
+      38.231634102237344,
+      140.90813823068245
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市若林区沖野２－５－８０",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:51.202633"
+  },
+  {
+    "id": "04552",
+    "internal_id": 373983310,
+    "name": "多賀城店",
+    "coords": [
+      38.285985108798556,
+      141.0051769888785
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県多賀城市町前２－３－１２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:10:54.131309"
+  },
+  {
+    "id": "04553",
+    "internal_id": 373983311,
+    "name": "４号線古川荒谷店",
+    "coords": [
+      38.60315012668536,
+      140.9790130646259
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県大崎市古川荒谷字新芋川３２－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:10:57.413017"
+  },
+  {
+    "id": "04554",
+    "internal_id": 373983312,
+    "name": "４８号愛子ヨークタウン店",
+    "coords": [
+      38.26775118251754,
+      140.7607240443465
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市青葉区上愛子字新宮前２０－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:11:00.952016"
+  },
+  {
+    "id": "04555",
+    "internal_id": 373983313,
+    "name": "２８６西多賀店",
+    "coords": [
+      38.22037017402085,
+      140.85270606272707
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市太白区西多賀５－１６－８",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:11:03.739649"
+  },
+  {
+    "id": "04556",
+    "internal_id": 373983314,
+    "name": "イオンモール新利府店",
+    "coords": [
+      38.32278321477951,
+      140.97192702070566
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県宮城郡利府町新中道３－１－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:11:06.487164"
+  },
+  {
+    "id": "04557",
+    "internal_id": 373983315,
+    "name": "広瀬通駅前店",
+    "coords": [
+      38.26316723127695,
+      140.8737261208813
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市青葉区本町２－３－１０",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:11:09.710365"
+  },
+  {
+    "id": "04558",
+    "internal_id": 373983316,
+    "name": "イオン気仙沼店",
+    "coords": [
+      38.889011069466484,
+      141.572905076847
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県気仙沼市赤岩舘下６－１外",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:11:12.017933"
+  },
+  {
+    "id": "04560",
+    "internal_id": 373983317,
+    "name": "角田ヤマザワ店",
+    "coords": [
+      37.97495210620868,
+      140.7955910417239
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県角田市角田中島下５５９－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:11:15.617842"
+  },
+  {
+    "id": "04561",
+    "internal_id": 373983318,
+    "name": "イオンモール仙台上杉店",
+    "coords": [
+      38.27575017131909,
+      140.87201401122445
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市青葉区堤通雨宮町１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-27T15:11:18.334673"
+  },
+  {
+    "id": "04562",
+    "internal_id": 373983319,
+    "name": "仙台白萩店",
+    "coords": [
+      38.24974401295665,
+      140.910134151373
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市若林区白萩町３７－１０",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:11:21.553482"
+  },
+  {
+    "id": "04563",
+    "internal_id": 373983320,
+    "name": "榴ヶ岡店",
+    "coords": [
+      38.258264030866805,
+      140.89690906373147
+    ],
+    "prefecture_code": 4,
+    "address": "宮城県仙台市宮城野区宮城野１ー１２ー１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-27T15:11:24.647891"
+  }
+]

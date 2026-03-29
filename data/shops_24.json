@@ -1,0 +1,2114 @@
+[
+  {
+    "id": "24004",
+    "internal_id": 374340771,
+    "name": "２３号津店",
+    "coords": [
+      34.749697207711,
+      136.52101526440026
+    ],
+    "prefecture_code": 24,
+    "address": "三重県津市栗真町屋町４５１－２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:08:31.409736"
+  },
+  {
+    "id": "24005",
+    "internal_id": 374340772,
+    "name": "１号線四日市店",
+    "coords": [
+      34.94762127650073,
+      136.6069002567828
+    ],
+    "prefecture_code": 24,
+    "address": "三重県四日市市日永東３－１８８３－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:08:34.891503"
+  },
+  {
+    "id": "24006",
+    "internal_id": 374340773,
+    "name": "伊勢店",
+    "coords": [
+      34.507578298065845,
+      136.72407832502827
+    ],
+    "prefecture_code": 24,
+    "address": "三重県伊勢市小木町５７８－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:30",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "06:30",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "06:30",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:08:38.751460"
+  },
+  {
+    "id": "24007",
+    "internal_id": 374340774,
+    "name": "津南店",
+    "coords": [
+      34.66778419747297,
+      136.51860444861907
+    ],
+    "prefecture_code": 24,
+    "address": "三重県津市雲出本郷町１７３２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:08:42.174971"
+  },
+  {
+    "id": "24008",
+    "internal_id": 374340775,
+    "name": "松阪店",
+    "coords": [
+      34.56265630239324,
+      136.52798534807928
+    ],
+    "prefecture_code": 24,
+    "address": "三重県松阪市大黒田町７１８－３",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:08:44.707155"
+  },
+  {
+    "id": "24009",
+    "internal_id": 374340776,
+    "name": "四日市近鉄店",
+    "coords": [
+      34.96801728827687,
+      136.61815021956002
+    ],
+    "prefecture_code": 24,
+    "address": "三重県四日市市安島１－３１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:08:48.116218"
+  },
+  {
+    "id": "24011",
+    "internal_id": 374340778,
+    "name": "鈴鹿中央通り店",
+    "coords": [
+      34.875447128873475,
+      136.56755123729403
+    ],
+    "prefecture_code": 24,
+    "address": "三重県鈴鹿市西條町３９１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:08:51.003070"
+  },
+  {
+    "id": "24013",
+    "internal_id": 374340780,
+    "name": "イオン伊賀上野店",
+    "coords": [
+      34.76025437571976,
+      136.13606844593556
+    ],
+    "prefecture_code": 24,
+    "address": "三重県伊賀市上野茅町２５１９",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "08:50",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "08:50",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "08:50",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:08:54.109670"
+  },
+  {
+    "id": "24017",
+    "internal_id": 374340783,
+    "name": "イオン阿児店",
+    "coords": [
+      34.323451237447884,
+      136.82846208740645
+    ],
+    "prefecture_code": 24,
+    "address": "三重県志摩市阿児町鵜方３２１５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:08:58.025784"
+  },
+  {
+    "id": "24020",
+    "internal_id": 374340786,
+    "name": "生桑サンシ店",
+    "coords": [
+      34.98767631588571,
+      136.60121044181042
+    ],
+    "prefecture_code": 24,
+    "address": "三重県四日市市生桑町字榎下１７５－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:09:02.180070"
+  },
+  {
+    "id": "24502",
+    "internal_id": 374340789,
+    "name": "津新町アルテ店",
+    "coords": [
+      34.72120823980262,
+      136.48728641705046
+    ],
+    "prefecture_code": 24,
+    "address": "三重県津市博多町１３６－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "19:30"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "19:30"
+      },
+      "holiday": {
+        "open": "09:30",
+        "close": "19:30"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:09:05.268743"
+  },
+  {
+    "id": "24526",
+    "internal_id": 374340812,
+    "name": "松阪三雲店",
+    "coords": [
+      34.60010325588314,
+      136.51936229555213
+    ],
+    "prefecture_code": 24,
+    "address": "三重県松阪市久米町１１６４－２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:08.323700"
+  },
+  {
+    "id": "24533",
+    "internal_id": 374340819,
+    "name": "伊賀上野店",
+    "coords": [
+      34.78021732765764,
+      136.13350853316345
+    ],
+    "prefecture_code": 24,
+    "address": "三重県伊賀市服部町字尾崎１８２５－３２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:11.132493"
+  },
+  {
+    "id": "24534",
+    "internal_id": 374340820,
+    "name": "嬉野ＭＥＧＡドン・キホーテＵＮＹ店",
+    "coords": [
+      34.63227922126469,
+      136.4792682701417
+    ],
+    "prefecture_code": 24,
+    "address": "三重県松阪市嬉野中川新町４－２０５",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "20:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:13.974168"
+  },
+  {
+    "id": "24540",
+    "internal_id": 374340826,
+    "name": "松阪三雲アピタ店",
+    "coords": [
+      34.60469134152405,
+      136.5190682726453
+    ],
+    "prefecture_code": 24,
+    "address": "三重県松阪市市場庄町１２６６－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:17.364046"
+  },
+  {
+    "id": "24541",
+    "internal_id": 374340827,
+    "name": "津北マックスバリュ店",
+    "coords": [
+      34.748074181876916,
+      136.50291634001582
+    ],
+    "prefecture_code": 24,
+    "address": "三重県津市一身田上津部田イノ坪４２－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:20.208076"
+  },
+  {
+    "id": "24544",
+    "internal_id": 374340830,
+    "name": "３０６亀山店",
+    "coords": [
+      34.85849923711285,
+      136.47088942057002
+    ],
+    "prefecture_code": 24,
+    "address": "三重県亀山市栄町字萩野１４８８－１２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:09:23.023276"
+  },
+  {
+    "id": "24546",
+    "internal_id": 374340832,
+    "name": "イオンモール明和店",
+    "coords": [
+      34.58164733764689,
+      136.61492436808783
+    ],
+    "prefecture_code": 24,
+    "address": "三重県多気郡明和町中村１２２３",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:09:27.150169"
+  },
+  {
+    "id": "24552",
+    "internal_id": 374340838,
+    "name": "鈴鹿ＭＥＧＡドン・キホーテＵＮＹ店",
+    "coords": [
+      34.85267227301701,
+      136.58174247222559
+    ],
+    "prefecture_code": 24,
+    "address": "三重県鈴鹿市南玉垣町３６２８",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:30.314296"
+  },
+  {
+    "id": "24553",
+    "internal_id": 374340839,
+    "name": "久居インター店",
+    "coords": [
+      34.68186326745758,
+      136.46475224991443
+    ],
+    "prefecture_code": 24,
+    "address": "三重県津市久居明神町大字風早２７２１－１",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:34.109336"
+  },
+  {
+    "id": "24555",
+    "internal_id": 374340841,
+    "name": "イオンモール鈴鹿店",
+    "coords": [
+      34.8734673196275,
+      136.5313644584155
+    ],
+    "prefecture_code": 24,
+    "address": "三重県鈴鹿市庄野羽山４－１－２",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:36.536271"
+  },
+  {
+    "id": "24556",
+    "internal_id": 374340842,
+    "name": "４２号尾鷲店",
+    "coords": [
+      34.071147556713534,
+      136.18670225483805
+    ],
+    "prefecture_code": 24,
+    "address": "三重県尾鷲市古戸野町９６７－５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:39.792012"
+  },
+  {
+    "id": "24557",
+    "internal_id": 374340843,
+    "name": "２３号岸岡店",
+    "coords": [
+      34.851370127337006,
+      136.59036621210154
+    ],
+    "prefecture_code": 24,
+    "address": "三重県鈴鹿市岸岡町字北新田１９４５－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "05:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "05:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:43.065610"
+  },
+  {
+    "id": "24558",
+    "internal_id": 374340844,
+    "name": "４７７尾平店",
+    "coords": [
+      34.9765122886082,
+      136.58896440561097
+    ],
+    "prefecture_code": 24,
+    "address": "三重県四日市市尾平町字天王川原１８６０－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:09:46.335445"
+  },
+  {
+    "id": "24559",
+    "internal_id": 374340845,
+    "name": "桔梗が丘店",
+    "coords": [
+      34.63956046852115,
+      136.1203842603571
+    ],
+    "prefecture_code": 24,
+    "address": "三重県名張市桔梗が丘２－５－５１－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:49.025751"
+  },
+  {
+    "id": "24560",
+    "internal_id": 374340846,
+    "name": "伊勢宮川店",
+    "coords": [
+      34.492512279574775,
+      136.68002627328264
+    ],
+    "prefecture_code": 24,
+    "address": "三重県伊勢市川端町２６３－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:09:52.029441"
+  },
+  {
+    "id": "24562",
+    "internal_id": 374340848,
+    "name": "イオンモール津南店",
+    "coords": [
+      34.669638414593976,
+      136.5178652814941
+    ],
+    "prefecture_code": 24,
+    "address": "三重県津市高茶屋小森町１４５",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "20:30"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "20:30"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "20:30"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-29T19:09:54.974056"
+  },
+  {
+    "id": "24563",
+    "internal_id": 374340849,
+    "name": "イオンタウン四日市泊店",
+    "coords": [
+      34.938351096924826,
+      136.6018993544027
+    ],
+    "prefecture_code": 24,
+    "address": "三重県四日市市泊小柳町４－５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:09:57.890315"
+  },
+  {
+    "id": "24566",
+    "internal_id": 374340852,
+    "name": "２３号鈴鹿磯山店",
+    "coords": [
+      34.817833190829404,
+      136.57121544922992
+    ],
+    "prefecture_code": 24,
+    "address": "三重県鈴鹿市磯山３－５－１６",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:10:00.736186"
+  },
+  {
+    "id": "24567",
+    "internal_id": 374340853,
+    "name": "サニーロード明和店",
+    "coords": [
+      34.52270833489615,
+      136.62239938177578
+    ],
+    "prefecture_code": 24,
+    "address": "三重県多気郡明和町有爾中１０７４",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:10:03.201337"
+  },
+  {
+    "id": "24568",
+    "internal_id": 374340854,
+    "name": "四日市芝田店",
+    "coords": [
+      34.97020214033941,
+      136.61076328556715
+    ],
+    "prefecture_code": 24,
+    "address": "三重県四日市市芝田１－１０－２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:10:06.893652"
+  },
+  {
+    "id": "24569",
+    "internal_id": 374340855,
+    "name": "スーパービバホーム名張店",
+    "coords": [
+      34.6147142342998,
+      136.08992527116217
+    ],
+    "prefecture_code": 24,
+    "address": "三重県名張市瀬古口３３４－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:10:09.496634"
+  },
+  {
+    "id": "24570",
+    "internal_id": 374340856,
+    "name": "伊勢藤里店",
+    "coords": [
+      34.47942917296406,
+      136.70924531021703
+    ],
+    "prefecture_code": 24,
+    "address": "三重県伊勢市藤里町岩ケ崎６９１ー１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-29T19:10:12.490597"
+  }
+]

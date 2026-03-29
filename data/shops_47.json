@@ -1,0 +1,2626 @@
+[
+  {
+    "id": "47005",
+    "internal_id": 373816203,
+    "name": "コザ十字路店",
+    "coords": [
+      26.34097950140072,
+      127.81852032175816
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県沖縄市東１－１－１５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:12:41.604590"
+  },
+  {
+    "id": "47006",
+    "internal_id": 373816204,
+    "name": "宜野湾店",
+    "coords": [
+      26.26044657988214,
+      127.7591914802761
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県宜野湾市宜野湾３－２－２２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:12:44.635676"
+  },
+  {
+    "id": "47008",
+    "internal_id": 373816206,
+    "name": "名護店",
+    "coords": [
+      26.579572574712294,
+      127.98561832494072
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県名護市東江４－２４－１７",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:12:47.871761"
+  },
+  {
+    "id": "47015",
+    "internal_id": 373816213,
+    "name": "糸満店",
+    "coords": [
+      26.148544626490185,
+      127.67269131024472
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県糸満市潮平７２７－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:12:52.035918"
+  },
+  {
+    "id": "47016",
+    "internal_id": 373816214,
+    "name": "安慶名店",
+    "coords": [
+      26.38017757539262,
+      127.85655334300775
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県うるま市みどり町６－１－１６",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:12:55.514808"
+  },
+  {
+    "id": "47018",
+    "internal_id": 373816216,
+    "name": "上地店",
+    "coords": [
+      26.33607161613789,
+      127.7931284183767
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県沖縄市上地４－２１－６",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:12:58.807027"
+  },
+  {
+    "id": "47019",
+    "internal_id": 373816217,
+    "name": "登川店",
+    "coords": [
+      26.369704562957246,
+      127.81979639862263
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県沖縄市登川１－９－１５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:01.802441"
+  },
+  {
+    "id": "47020",
+    "internal_id": 373816218,
+    "name": "小禄店",
+    "coords": [
+      26.19323147173574,
+      127.6617034633766
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県那覇市赤嶺２－１－１０",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:04.235350"
+  },
+  {
+    "id": "47021",
+    "internal_id": 373816219,
+    "name": "大平インター店",
+    "coords": [
+      26.250506471528283,
+      127.71512737395618
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県浦添市伊祖１－１－１７",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:07.288754"
+  },
+  {
+    "id": "47022",
+    "internal_id": 373816220,
+    "name": "国場十字路店",
+    "coords": [
+      26.19615452834438,
+      127.70530244896551
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県那覇市仲井真１３０",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:10.348788"
+  },
+  {
+    "id": "47025",
+    "internal_id": 373816223,
+    "name": "泡瀬店",
+    "coords": [
+      26.318379681233903,
+      127.82101548472255
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県沖縄市高原７－２０－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:14.345093"
+  },
+  {
+    "id": "47506",
+    "internal_id": 373816229,
+    "name": "とよみイオンタウン店",
+    "coords": [
+      26.189927445644127,
+      127.68784738373121
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県豊見城市根差部７１０",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:16.692062"
+  },
+  {
+    "id": "47509",
+    "internal_id": 373816232,
+    "name": "豊見城サンエー店",
+    "coords": [
+      26.175126497025694,
+      127.68807455242133
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県豊見城市高安２６１－２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:19.867487"
+  },
+  {
+    "id": "47510",
+    "internal_id": 373816233,
+    "name": "中の町サンエー店",
+    "coords": [
+      26.333247547808394,
+      127.79904434613142
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県沖縄市胡屋２－１－５６",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:00"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:23.712330"
+  },
+  {
+    "id": "47512",
+    "internal_id": 373816235,
+    "name": "与勝サンエー店",
+    "coords": [
+      26.345789429194213,
+      127.8707874188394
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県うるま市勝連南風原５１１１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:27.333797"
+  },
+  {
+    "id": "47517",
+    "internal_id": 373816240,
+    "name": "国際通り牧志店",
+    "coords": [
+      26.21690158444324,
+      127.68911849651153
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県那覇市牧志２－３－１",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:30.783354"
+  },
+  {
+    "id": "47518",
+    "internal_id": 373816241,
+    "name": "３３０瑞慶覧店",
+    "coords": [
+      26.308387431142048,
+      127.78266144555248
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県中頭郡北中城村字瑞慶覧６４１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:33.405559"
+  },
+  {
+    "id": "47519",
+    "internal_id": 373816242,
+    "name": "具志川メインシティ店",
+    "coords": [
+      26.35249061586508,
+      127.82580339264042
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県うるま市江洲木堀原４５０－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "22:30"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "22:30"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "22:30"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:37.128655"
+  },
+  {
+    "id": "47520",
+    "internal_id": 373816243,
+    "name": "５８号大謝名店",
+    "coords": [
+      26.26919451430872,
+      127.73573946056057
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県宜野湾市大謝名１－６－３",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:40.427006"
+  },
+  {
+    "id": "47521",
+    "internal_id": 373816244,
+    "name": "伊祖イオンタウン店",
+    "coords": [
+      26.25486464497482,
+      127.71651634918476
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県浦添市伊祖２－１９－８",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:43.851187"
+  },
+  {
+    "id": "47522",
+    "internal_id": 373816245,
+    "name": "天久りうぼう楽市店",
+    "coords": [
+      26.229099497724068,
+      127.69086453410144
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県那覇市天久１－１－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:47.908485"
+  },
+  {
+    "id": "47524",
+    "internal_id": 373816247,
+    "name": "具志川イオン店",
+    "coords": [
+      26.338178492272178,
+      127.84534750873864
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県うるま市前原３０３",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:50.648406"
+  },
+  {
+    "id": "47526",
+    "internal_id": 373816249,
+    "name": "名護宮里店",
+    "coords": [
+      26.604727568907258,
+      127.97555153959603
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県名護市宮里１３９０－１",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:13:53.567246"
+  },
+  {
+    "id": "47527",
+    "internal_id": 373816250,
+    "name": "那覇メインプレイス店",
+    "coords": [
+      26.22597266183117,
+      127.69525754173605
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県那覇市おもろまち４－４－９",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "21:30"
+      },
+      "holiday": {
+        "open": "09:00",
+        "close": "21:30"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:13:57.549380"
+  },
+  {
+    "id": "47528",
+    "internal_id": 373816251,
+    "name": "５８号嘉手納店",
+    "coords": [
+      26.356895456345242,
+      127.74559854459609
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県中頭郡嘉手納町水釜３２７－２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:00.307235"
+  },
+  {
+    "id": "47529",
+    "internal_id": 373816252,
+    "name": "具志川店",
+    "coords": [
+      26.337287492259314,
+      127.84665352258263
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県うるま市字前原２６２－３",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:14:03.050854"
+  },
+  {
+    "id": "47530",
+    "internal_id": 373816253,
+    "name": "牧港店",
+    "coords": [
+      26.267163469081996,
+      127.7248415414732
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県浦添市牧港５－７－５",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "01:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "01:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "01:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:05.754799"
+  },
+  {
+    "id": "47532",
+    "internal_id": 373816255,
+    "name": "東風平店",
+    "coords": [
+      26.157683488526125,
+      127.72127143444207
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県島尻郡八重瀬町伊覇５８－２",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:08.220339"
+  },
+  {
+    "id": "47533",
+    "internal_id": 373816256,
+    "name": "真嘉比古島店",
+    "coords": [
+      26.223740534836924,
+      127.705630576585
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県那覇市真嘉比３－１５－１１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:11.255226"
+  },
+  {
+    "id": "47534",
+    "internal_id": 373816257,
+    "name": "宜野湾バイパス店",
+    "coords": [
+      26.28646149193684,
+      127.74872333652961
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県宜野湾市大山７－５－５",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "05:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "05:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:14:14.128135"
+  },
+  {
+    "id": "47535",
+    "internal_id": 373816258,
+    "name": "５０７津嘉山店",
+    "coords": [
+      26.19230365230227,
+      127.71349347587987
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県島尻郡南風原町字津嘉山１３６８－１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:16.937852"
+  },
+  {
+    "id": "47536",
+    "internal_id": 373816259,
+    "name": "５８号桑江店",
+    "coords": [
+      26.318086673133383,
+      127.7606765061644
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県中頭郡北谷町桑江１－１２－８",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:14:20.073041"
+  },
+  {
+    "id": "47537",
+    "internal_id": 373816260,
+    "name": "宮古島店",
+    "coords": [
+      24.786700003383583,
+      125.28134470691873
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県宮古島市平良字久貝１０６９－１",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:23.842183"
+  },
+  {
+    "id": "47538",
+    "internal_id": 373816261,
+    "name": "石川店",
+    "coords": [
+      26.43006245051216,
+      127.82367255406128
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県うるま市石川１－１３－８",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": true,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:26.683109"
+  },
+  {
+    "id": "47539",
+    "internal_id": 373816262,
+    "name": "イオンモール沖縄ライカム店",
+    "coords": [
+      26.314351433316272,
+      127.79615852018597
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県中頭郡北中城村字ライカム１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "21:30"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:30"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "21:30"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": false,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:29.908108"
+  },
+  {
+    "id": "47540",
+    "internal_id": 373816263,
+    "name": "３２９与那原店",
+    "coords": [
+      26.211045648935617,
+      127.759908348285
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県島尻郡与那原町字与那原１１１２",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "01:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "01:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "01:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": true,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:14:33.199365"
+  },
+  {
+    "id": "47543",
+    "internal_id": 373816266,
+    "name": "イオン南風原店",
+    "coords": [
+      26.20093752090088,
+      127.73785957483142
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県島尻郡南風原町宮平２６４",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "holiday": {
+        "open": "10:00",
+        "close": "22:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": false,
+      "breakfast": true,
+      "mccafe": false,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:36.365440"
+  },
+  {
+    "id": "47544",
+    "internal_id": 373816267,
+    "name": "ひめゆり通り壺屋店",
+    "coords": [
+      26.21271958219987,
+      127.69359234794375
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県那覇市壺屋１－２８－１８",
+    "bigmac_price": 530,
+    "price_tier": "semi_urban_a",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": true,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:39.372676"
+  },
+  {
+    "id": "47546",
+    "internal_id": 373816268,
+    "name": "普天間店",
+    "coords": [
+      26.29047861583717,
+      127.77260844033485
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県宜野湾市字普天間２３６ー１",
+    "bigmac_price": 520,
+    "price_tier": "semi_urban_b",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": true,
+      "free_wifi": true,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:42.968582"
+  },
+  {
+    "id": "47547",
+    "internal_id": 373816269,
+    "name": "イオン浦西店",
+    "coords": [
+      26.24274153675987,
+      127.74212046195359
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県浦添市前田３－１１－１４",
+    "bigmac_price": 500,
+    "price_tier": "standard",
+    "price_tier_raw": "0",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "23:00"
+      },
+      "holiday": {
+        "open": "07:00",
+        "close": "23:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": false,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": false
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scraped_at": "2026-03-26T15:14:45.840464"
+  },
+  {
+    "id": "47549",
+    "internal_id": 373816271,
+    "name": "石垣島店",
+    "coords": [
+      24.339261138159287,
+      124.18576264439963
+    ],
+    "prefecture_code": 47,
+    "address": "沖縄県石垣市真栄里４４０ー３",
+    "bigmac_price": 550,
+    "price_tier": "urban",
+    "price_tier_raw": "1",
+    "price_fetch_status": "ok",
+    "hours": {
+      "weekday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "24:00"
+      },
+      "holiday": {
+        "open": "06:00",
+        "close": "24:00"
+      }
+    },
+    "options": {
+      "is_24h": false,
+      "drive_thru": false,
+      "delivery": true,
+      "breakfast": false,
+      "mccafe": true,
+      "mobile_order": true,
+      "parking": false,
+      "free_wifi": false,
+      "special_location": false,
+      "specific_store": true
+    },
+    "raw_conditions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scraped_at": "2026-03-26T15:14:49.361003"
+  }
+]
